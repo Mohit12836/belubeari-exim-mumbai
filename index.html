@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-  <title>M/s Belubeari Exim | Cinematic Industrial Transmission & Mechanical Engineering Suite</title>
-  <meta name="description" content="M/s Belubeari Exim — Master distributor & wholesaler of Mitsuboshi & Conti timing belts, precision bearings, heavy conveyors, and linear motion guides with interactive B2B engineering calculations." />
+  <title>M/s Belubeari Exim | 24K Gold Royal Mechanical Engineering & Transmission Suite</title>
+  <meta name="description" content="M/s Belubeari Exim — Mumbai's master distributor of Mitsuboshi & Conti timing belts, precision bearings, and linear motion guides with interactive 24K Gold B2B engineering calculations and audio magic." />
 
   <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) + JetBrains Mono (Specs) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -24,48 +23,64 @@
             mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
-            space: {
-              950: '#040911',
-              900: '#070f1a',
-              850: '#0b1626',
-              800: '#0f2038',
-              750: '#152945',
-              700: '#1d385c',
+            royal: {
+              950: '#0f0c1b',
+              900: '#181329',
+              850: '#231b38',
+              800: '#2e2247',
+              750: '#3c2c5c',
+              700: '#4d3975',
             },
-            cyanGlow: {
-              400: '#22d3ee',
-              500: '#06b6d4',
-              600: '#0891b2',
+            gold: {
+              100: '#fef9c3',
+              200: '#fef08a',
+              300: '#fde047',
+              400: '#facc15',
+              500: '#eab308',
+              600: '#ca8a04',
+              700: '#a16207',
             },
-            amberGlow: {
+            amber: {
               400: '#fbbf24',
               500: '#f59e0b',
               600: '#d97706',
             },
-            emeraldGlow: {
+            sunset: {
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            emerald: {
               400: '#34d399',
               500: '#10b981',
               600: '#059669',
+            },
+            cyan: {
+              400: '#22d3ee',
+              500: '#06b6d4',
             }
           },
           animation: {
-            'glow-pulse': 'glowPulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'border-spin': 'borderSpin 6s linear infinite',
+            'glow-pulse': 'glowPulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             'float-slow': 'floatSlow 4s ease-in-out infinite',
-            'radar-spin': 'radarSpin 12s linear infinite',
+            'shimmer-gold': 'shimmerGold 6s linear infinite',
+            'sparkle': 'sparkle 2s ease-in-out infinite',
           },
           keyframes: {
             glowPulse: {
-              '0%, 100%': { opacity: '0.6', filter: 'blur(20px)' },
-              '50%': { opacity: '1', filter: 'blur(35px)' },
+              '0%, 100%': { opacity: '0.6', filter: 'blur(30px)' },
+              '50%': { opacity: '1', filter: 'blur(50px)' },
             },
             floatSlow: {
               '0%, 100%': { transform: 'translateY(0px)' },
               '50%': { transform: 'translateY(-8px)' },
             },
-            radarSpin: {
-              from: { transform: 'rotate(0deg)' },
-              to: { transform: 'rotate(360deg)' },
+            shimmerGold: {
+              '0%': { backgroundPosition: '0% 50%' },
+              '100%': { backgroundPosition: '200% 50%' },
+            },
+            sparkle: {
+              '0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
+              '50%': { transform: 'scale(1.2)', opacity: '1' },
             }
           }
         }
@@ -91,8 +106,8 @@
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #040911;
-      color: #e2e8f0;
+      background: #120e24;
+      color: #f8fafc;
     }
 
     .font-heading { font-family: 'Outfit', sans-serif; }
@@ -106,64 +121,92 @@
       padding-inline: clamp(0.75rem, 3.5vw, 2.5rem);
     }
 
-    /* Cinematic Blueprint Cyber Grid */
-    .cyber-grid {
+    /* 👑 24K Royal Gold Aurora Sky */
+    .gold-aurora-bg {
+      background-color: #120e24;
       background-image: 
-        radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.15) 0%, transparent 60%),
-        radial-gradient(circle at 100% 50%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-        linear-gradient(rgba(34, 211, 238, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
-      background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+        radial-gradient(circle at 50% -10%, rgba(245, 158, 11, 0.28) 0%, transparent 60%),
+        radial-gradient(circle at 100% 40%, rgba(217, 119, 6, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 0% 70%, rgba(234, 88, 12, 0.20) 0%, transparent 50%),
+        radial-gradient(circle at 70% 100%, rgba(245, 158, 11, 0.15) 0%, transparent 60%),
+        linear-gradient(rgba(245, 158, 11, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245, 158, 11, 0.04) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
     }
 
-    /* Glassmorphism Card Style with Shimmer */
-    .cinematic-glass {
-      background: rgba(11, 22, 38, 0.7);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 0 20px -5px rgba(6, 182, 212, 0.08);
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .cinematic-glass:hover {
-      border-color: rgba(6, 182, 212, 0.35);
-      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.8), 0 0 30px 2px rgba(6, 182, 212, 0.18);
-    }
-
-    /* Dynamic 3D Card Hover Perspective */
-    .tilt-card {
-      transform-style: preserve-3d;
-      transition: transform 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
-    }
-
-    /* Interactive Tactile & Magnetic Physics */
-    .btn-magnetic {
-      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
-    }
-    .btn-magnetic:hover {
-      transform: translateY(-2px) scale(1.02);
-    }
-    .btn-magnetic:active {
-      transform: translateY(1px) scale(0.97);
-    }
-
-    /* Glowing Border Beam */
-    .border-beam {
+    /* Luminous 24K Gold Glass Card with Top Specular Highlight */
+    .gold-glass {
       position: relative;
+      background: linear-gradient(135deg, rgba(35, 27, 56, 0.85) 0%, rgba(24, 19, 41, 0.9) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6), 0 0 25px -5px rgba(245, 158, 11, 0.15);
+      border-radius: 1.5rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .border-beam::before {
+    .gold-glass::before {
       content: '';
       position: absolute;
-      inset: -1px;
+      inset-x: 0;
+      top: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(254, 240, 138, 0.8), rgba(245, 158, 11, 0.9), transparent);
+      border-radius: 1.5rem 1.5rem 0 0;
+      pointer-events: none;
+    }
+    .gold-glass:hover {
+      border-color: rgba(251, 191, 36, 0.6);
+      box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.8), 0 0 35px 4px rgba(245, 158, 11, 0.3);
+      transform: translateY(-3px);
+    }
+
+    /* 3D Tilt Card */
+    .tilt-card {
+      transform-style: preserve-3d;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+    }
+
+    /* Buttery Smooth Magnetic Spring Button */
+    .btn-gold-spring {
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      overflow: hidden;
+    }
+    .btn-gold-spring:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 12px 28px -5px rgba(245, 158, 11, 0.4);
+    }
+    .btn-gold-spring:active {
+      transform: translateY(1px) scale(0.96);
+    }
+
+    /* Radiant Gold Shimmer Text */
+    .gold-gradient-text {
+      background: linear-gradient(90deg, #fef08a 0%, #fbbf24 35%, #f59e0b 70%, #fed7aa 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerGold 4s linear infinite;
+    }
+
+    /* Animated Gold Border Beam */
+    .gold-border-beam {
+      position: relative;
+    }
+    .gold-border-beam::after {
+      content: '';
+      position: absolute;
+      inset: -1.5px;
       border-radius: inherit;
-      padding: 1.5px;
-      background: linear-gradient(90deg, #06b6d4, #f59e0b, #10b981, #06b6d4);
+      padding: 2px;
+      background: linear-gradient(90deg, #fbbf24, #f97316, #10b981, #fbbf24);
       background-size: 300% 300%;
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
-      animation: beamRotate 8s linear infinite;
+      animation: beamRotate 6s linear infinite;
       pointer-events: none;
     }
     @keyframes beamRotate {
@@ -175,99 +218,93 @@
     /* Hide standard scrollbars */
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-    /* Scroll Reveal Transition Helper */
-    .reveal-item {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .reveal-item.revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 
-<body class="pb-24 md:pb-0 relative cyber-grid">
+<body class="pb-28 md:pb-0 relative gold-aurora-bg">
 
   <!-- ============================================================
-       BACKGROUND INTERACTIVE PARTICLE CANVAS
+       BACKGROUND 24K GOLD PARTICLES & SPARKS CANVAS
   ============================================================ -->
-  <canvas id="particleCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+  <canvas id="sparkCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-60"></canvas>
 
   <!-- ============================================================
-       1. TOP CINEMATIC HUD BAR
+       1. TOP ROYAL ANNOUNCEMENT & SOUND CONTROL HUD
   ============================================================ -->
-  <div class="relative z-50 bg-space-950/90 backdrop-blur-md border-b border-space-800 text-xs py-2 px-3">
+  <div class="relative z-50 bg-royal-950/90 backdrop-blur-md border-b border-amber-500/30 text-xs py-2 px-3">
     <div class="container-wide flex flex-wrap items-center justify-between gap-2">
-      <div class="flex items-center gap-2 font-mono text-[11px] text-slate-300">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-space-850 text-amberGlow-400 font-bold border border-amberGlow-500/30">
-          <span class="w-1.5 h-1.5 rounded-full bg-amberGlow-400 animate-ping"></span>
-          <span>B2B CENTRAL HUB</span>
+      <div class="flex items-center gap-2 font-mono text-[11px] text-amber-200">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-royal-950 font-black tracking-wider uppercase shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-royal-950 animate-ping"></span>
+          <span>👑 24K GOLD MASTER B2B HUB</span>
         </span>
-        <span class="hidden sm:inline text-slate-600">|</span>
-        <span class="text-slate-300 truncate">Masjid Bunder, Mumbai • Daily Pan-India Evening Loading Active</span>
+        <span class="hidden sm:inline text-amber-400/40">|</span>
+        <span class="text-amber-100 truncate">Masjid Bunder, Mumbai • Daily Pan-India Evening Loading Active</span>
       </div>
       
-      <div class="flex items-center gap-4 text-[11px] font-mono">
-        <span class="hidden md:inline text-slate-400">Direct Desk: <strong class="text-cyanGlow-400">+91 99673 84878</strong></span>
-        <a href="#tools" class="text-amberGlow-400 hover:text-amber-300 font-bold underline decoration-amberGlow-400/40 flex items-center gap-1">
-          <i data-lucide="wrench" class="w-3.5 h-3.5"></i>
-          <span>Live Calculations Suite &rarr;</span>
+      <div class="flex items-center gap-3 text-[11px] font-mono">
+        <!-- Audio Synthesizer Mute/Unmute Toggle Button -->
+        <button id="audioToggleBtn" onclick="toggleAudio()" class="px-2.5 py-1 rounded-full bg-royal-900 hover:bg-royal-850 text-amber-300 font-bold border border-amber-500/40 transition flex items-center gap-1.5 btn-gold-spring">
+          <i data-lucide="volume-2" id="audioIcon" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span id="audioLabel">Sound FX: ON</span>
+        </button>
+
+        <a href="#tools" class="text-amber-300 hover:text-amber-100 font-extrabold underline decoration-amber-400/50 flex items-center gap-1">
+          <i data-lucide="wrench" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Live Calculations &rarr;</span>
         </a>
       </div>
     </div>
   </div>
 
   <!-- ============================================================
-       2. PRIMARY CINEMATIC GLASS NAVIGATION
+       2. PRIMARY LUXURY GOLD NAVIGATION
   ============================================================ -->
-  <header class="sticky top-[33px] z-40 bg-space-950/80 backdrop-blur-xl border-b border-space-800 shadow-2xl transition-all">
+  <header class="sticky top-[33px] z-40 bg-royal-950/85 backdrop-blur-xl border-b border-amber-500/25 shadow-2xl transition-all">
     <div class="container-wide h-18 py-3 flex items-center justify-between gap-4">
       
       <!-- Brand Logo -->
-      <a href="#home" class="flex items-center gap-3 group">
+      <a href="#home" onclick="sound.playChime()" class="flex items-center gap-3 group">
         <div class="relative">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-cyanGlow-500 to-amberGlow-500 p-0.5 shadow-lg group-hover:shadow-cyanGlow-500/25 transition">
-            <div class="w-full h-full bg-space-900 rounded-[10px] flex items-center justify-center text-amberGlow-400 font-black text-xl font-heading">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-300 via-amber-500 to-sunset-500 p-0.5 shadow-lg shadow-amber-500/30 group-hover:scale-105 transition">
+            <div class="w-full h-full bg-royal-950 rounded-[14px] flex items-center justify-center text-amber-300 font-black text-xl font-heading">
               BE
             </div>
           </div>
-          <div class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-emeraldGlow-500 border-2 border-space-950"></div>
+          <div class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-royal-950 shadow-sm"></div>
         </div>
 
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-heading font-black text-lg sm:text-xl text-white tracking-tight leading-none group-hover:text-cyanGlow-400 transition">
-              BELUBEARI <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyanGlow-400 to-amberGlow-400">EXIM</span>
+            <span class="font-heading font-black text-lg sm:text-xl text-white tracking-tight leading-none group-hover:text-amber-300 transition">
+              BELUBEARI <span class="gold-gradient-text">EXIM</span>
             </span>
-            <span class="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold font-mono bg-cyanGlow-500/10 text-cyanGlow-400 border border-cyanGlow-500/20">
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-extrabold font-mono bg-amber-500/15 text-amber-300 border border-amber-500/30">
               ESTD. 2018
             </span>
           </div>
-          <p class="text-[11px] text-slate-400 font-medium mt-0.5">
-            Transmission, Bearings & Pro Engineering Suite • Mumbai – 400003
+          <p class="text-[11px] text-amber-200/80 font-medium mt-0.5">
+            Transmission, Bearings & Pro Engineering Suite • Mumbai
           </p>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold text-slate-300 uppercase tracking-wider font-mono">
-        <a href="#portfolio" class="hover:text-cyanGlow-400 transition flex items-center gap-1.5"><i data-lucide="layers" class="w-3.5 h-3.5 text-cyanGlow-400"></i> Spectrum</a>
-        <a href="#engineering" class="hover:text-cyanGlow-400 transition flex items-center gap-1.5"><i data-lucide="cpu" class="w-3.5 h-3.5 text-amberGlow-400"></i> Anatomy</a>
-        <a href="#tools" class="hover:text-amberGlow-400 text-amberGlow-400 transition flex items-center gap-1.5"><i data-lucide="calculator" class="w-3.5 h-3.5 text-amberGlow-400"></i> B2B Tools</a>
-        <a href="#industries" class="hover:text-cyanGlow-400 transition flex items-center gap-1.5"><i data-lucide="factory" class="w-3.5 h-3.5 text-emeraldGlow-400"></i> Industries</a>
-        <a href="#logistics" class="hover:text-cyanGlow-400 transition flex items-center gap-1.5"><i data-lucide="truck" class="w-3.5 h-3.5 text-cyanGlow-400"></i> Logistics</a>
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold text-amber-100 uppercase tracking-wider font-mono">
+        <a href="#portfolio" onclick="sound.playHover()" class="hover:text-amber-300 transition flex items-center gap-1.5"><i data-lucide="layers" class="w-3.5 h-3.5 text-amber-400"></i> Spectrum</a>
+        <a href="#engineering" onclick="sound.playHover()" class="hover:text-amber-300 transition flex items-center gap-1.5"><i data-lucide="cpu" class="w-3.5 h-3.5 text-sunset-500"></i> Anatomy</a>
+        <a href="#tools" onclick="sound.playHover()" class="hover:text-amber-300 text-amber-300 transition flex items-center gap-1.5 font-extrabold"><i data-lucide="calculator" class="w-3.5 h-3.5 text-amber-400"></i> B2B Tools</a>
+        <a href="#industries" onclick="sound.playHover()" class="hover:text-amber-300 transition flex items-center gap-1.5"><i data-lucide="factory" class="w-3.5 h-3.5 text-emerald-400"></i> Industries</a>
+        <a href="#logistics" onclick="sound.playHover()" class="hover:text-amber-300 transition flex items-center gap-1.5"><i data-lucide="truck" class="w-3.5 h-3.5 text-cyan-400"></i> Logistics</a>
       </nav>
 
-      <!-- Header Action Buttons -->
+      <!-- Action Buttons -->
       <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-        <a href="tel:+919967384878" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-space-850 hover:bg-space-800 text-slate-200 text-xs font-bold border border-space-700 transition btn-magnetic">
-          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emeraldGlow-400"></i>
+        <a href="tel:+919967384878" onclick="sound.playClick()" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-royal-900 hover:bg-royal-850 text-amber-200 text-xs font-bold border border-amber-500/30 transition btn-gold-spring">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400"></i>
           <span>+91 99673 84878</span>
         </a>
-        <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20I%20have%20an%20industrial%20purchase%20inquiry." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-xs sm:text-sm font-extrabold shadow-lg shadow-emerald-600/20 transition btn-magnetic">
+        <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20I%20have%20an%20industrial%20purchase%20inquiry." target="_blank" rel="noopener noreferrer" onclick="sound.playChime()" class="inline-flex items-center gap-2 px-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:to-emerald-500 text-white text-xs sm:text-sm font-black shadow-lg shadow-emerald-600/30 transition btn-gold-spring">
           <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
           <span>WhatsApp Desk</span>
         </a>
@@ -277,116 +314,116 @@
   </header>
 
   <!-- ============================================================
-       3. CINEMATIC 3D PARALLAX HERO SECTION
+       3. 24K GOLD CINEMATIC HERO SECTION
   ============================================================ -->
-  <section id="home" class="relative z-10 pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden border-b border-space-800">
+  <section id="home" class="relative z-10 pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden border-b border-amber-500/20">
     
-    <!-- Ambient Background Aurora Lights -->
-    <div class="absolute -top-32 left-1/4 w-96 h-96 bg-cyanGlow-500/15 rounded-full animate-glow-pulse pointer-events-none"></div>
-    <div class="absolute top-1/2 right-10 w-96 h-96 bg-amberGlow-500/10 rounded-full animate-glow-pulse pointer-events-none"></div>
+    <!-- Ambient Golden Glow Spheres -->
+    <div class="absolute -top-24 left-1/4 w-[500px] h-[500px] bg-amber-500/20 rounded-full animate-glow-pulse pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[450px] h-[450px] bg-sunset-500/15 rounded-full animate-glow-pulse pointer-events-none"></div>
 
     <div class="container-wide relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
-        <!-- Left Hero Column -->
+        <!-- Left Hero Content -->
         <div class="lg:col-span-7 space-y-6">
           
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-space-850/80 border border-space-700 text-xs font-mono text-cyanGlow-400">
-            <span class="w-2 h-2 rounded-full bg-cyanGlow-400 animate-ping"></span>
-            <span>CINEMATIC INDUSTRIAL SOURCING ENGINE</span>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-royal-900/80 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-md">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+            <span>24K ROYAL GOLD INDUSTRIAL SOURCING HUB</span>
           </div>
 
           <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.08]">
             Master Mechanical <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyanGlow-400 via-amberGlow-400 to-emeraldGlow-400">
+            <span class="gold-gradient-text">
               Transmission & Bearings
             </span>
           </h1>
 
-          <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
-            Welcome to <strong class="text-white">M/s Belubeari Exim</strong> — Mumbai’s premier wholesale distribution hub for authentic Japanese <strong class="text-cyanGlow-400">Mitsuboshi</strong> & German <strong class="text-amberGlow-400">Conti</strong> timing belts, precision bearings, heavy conveyor systems, and CNC linear guide rails.
+          <p class="text-sm sm:text-base text-amber-100/90 max-w-2xl font-normal leading-relaxed">
+            Welcome to <strong class="text-white">M/s Belubeari Exim</strong> — Mumbai’s premier wholesale distribution hub for authentic Japanese <strong class="text-amber-300 font-bold">Mitsuboshi</strong> & German <strong class="text-amber-300 font-bold">Conti</strong> timing belts, precision bearings, heavy conveyor systems, and CNC linear guide rails.
           </p>
 
           <!-- Magnetic Action Buttons -->
           <div class="flex flex-wrap items-center gap-3 pt-2">
-            <a href="#portfolio" class="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-cyanGlow-500 to-blue-600 hover:from-cyanGlow-400 hover:to-blue-500 text-space-950 font-extrabold text-xs sm:text-sm transition btn-magnetic shadow-lg shadow-cyanGlow-500/20 flex items-center gap-2">
-              <i data-lucide="layers" class="w-4 h-4"></i>
+            <a href="#portfolio" onclick="sound.playWarp()" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-sunset-500 text-royal-950 font-black text-xs sm:text-sm transition btn-gold-spring shadow-xl shadow-amber-500/30 flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-royal-950"></i>
               <span>Explore 12 Product Lines</span>
             </a>
-            <a href="#tools" class="px-5 py-3.5 rounded-2xl bg-space-850 hover:bg-space-800 text-white font-bold text-xs sm:text-sm border border-space-700 transition btn-magnetic flex items-center gap-2 shadow-md">
-              <i data-lucide="calculator" class="w-4 h-4 text-amberGlow-400"></i>
+            <a href="#tools" onclick="sound.playCalc()" class="px-6 py-3.5 rounded-2xl bg-royal-900/90 hover:bg-royal-850 text-amber-200 font-bold text-xs sm:text-sm border border-amber-500/40 transition btn-gold-spring flex items-center gap-2 shadow-md">
+              <i data-lucide="calculator" class="w-4 h-4 text-amber-400"></i>
               <span>Open B2B Calculation Suite</span>
             </a>
-            <a href="#rfq-desk" class="px-5 py-3.5 rounded-2xl bg-space-900 hover:bg-space-850 text-slate-300 font-bold text-xs sm:text-sm border border-space-800 transition btn-magnetic flex items-center gap-2">
-              <i data-lucide="send" class="w-4 h-4 text-emeraldGlow-400"></i>
+            <a href="#rfq-desk" onclick="sound.playClick()" class="px-5 py-3.5 rounded-2xl bg-royal-950 hover:bg-royal-900 text-slate-200 font-bold text-xs sm:text-sm border border-amber-500/20 transition btn-gold-spring flex items-center gap-2">
+              <i data-lucide="send" class="w-4 h-4 text-emerald-400"></i>
               <span>Quick RFQ Desk</span>
             </a>
           </div>
 
-          <!-- Live Dynamic Odometers Matrix -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-space-800">
-            <div class="p-3 rounded-2xl bg-space-900/80 border border-space-800 backdrop-blur-md">
-              <p class="font-mono font-black text-xl sm:text-2xl text-cyanGlow-400 odometer" data-target="10000">10,000+</p>
-              <p class="text-[11px] text-slate-400 font-medium">SKUs In Stock</p>
+          <!-- Dynamic Metrics Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-amber-500/20">
+            <div class="p-3 rounded-2xl gold-glass text-center">
+              <p class="font-mono font-black text-xl sm:text-2xl text-amber-300">10,000+</p>
+              <p class="text-[11px] text-amber-200/80 font-medium">SKUs In Stock</p>
             </div>
-            <div class="p-3 rounded-2xl bg-space-900/80 border border-space-800 backdrop-blur-md">
-              <p class="font-mono font-black text-xl sm:text-2xl text-amberGlow-400 odometer" data-target="100">Same-Day</p>
-              <p class="text-[11px] text-slate-400 font-medium">Mumbai Dispatch</p>
+            <div class="p-3 rounded-2xl gold-glass text-center">
+              <p class="font-mono font-black text-xl sm:text-2xl text-amber-400">Same-Day</p>
+              <p class="text-[11px] text-amber-200/80 font-medium">Mumbai Dispatch</p>
             </div>
-            <div class="p-3 rounded-2xl bg-space-900/80 border border-space-800 backdrop-blur-md">
-              <p class="font-mono font-black text-xl sm:text-2xl text-emeraldGlow-400">100%</p>
-              <p class="text-[11px] text-slate-400 font-medium">GST Invoiced with HSN</p>
+            <div class="p-3 rounded-2xl gold-glass text-center">
+              <p class="font-mono font-black text-xl sm:text-2xl text-emerald-400">100%</p>
+              <p class="text-[11px] text-amber-200/80 font-medium">GST Invoiced</p>
             </div>
-            <div class="p-3 rounded-2xl bg-space-900/80 border border-space-800 backdrop-blur-md">
+            <div class="p-3 rounded-2xl gold-glass text-center">
               <p class="font-mono font-black text-xl sm:text-2xl text-white">2018</p>
-              <p class="text-[11px] text-slate-400 font-medium">Estd. Entity Hub</p>
+              <p class="text-[11px] text-amber-200/80 font-medium">Estd. Entity Hub</p>
             </div>
           </div>
 
         </div>
 
-        <!-- Right Hero Interactive 3D Card with Tilt -->
+        <!-- Right Hero Interactive 3D Card with Tilt & Border Beam -->
         <div class="lg:col-span-5">
-          <div class="cinematic-glass border-beam rounded-3xl p-5 sm:p-7 relative overflow-hidden tilt-card" id="heroTiltCard">
+          <div class="gold-glass gold-border-beam p-5 sm:p-7 relative overflow-hidden tilt-card" id="heroTiltCard">
             
-            <div class="flex items-center justify-between pb-4 border-b border-space-800">
-              <div class="flex items-center gap-2 font-mono text-xs text-cyanGlow-400">
-                <i data-lucide="cpu" class="w-4 h-4"></i>
-                <span class="font-bold">ENGINEERING HUD SPEC</span>
+            <div class="flex items-center justify-between pb-4 border-b border-amber-500/20">
+              <div class="flex items-center gap-2 font-mono text-xs text-amber-300">
+                <i data-lucide="cpu" class="w-4 h-4 text-amber-400"></i>
+                <span class="font-bold">24K ENGINEERING HUD SPEC</span>
               </div>
-              <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emeraldGlow-500/10 text-emeraldGlow-400 border border-emeraldGlow-500/20">
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
                 JAPANESE / GERMAN OEM
               </span>
             </div>
 
-            <!-- Product Showcase Image with Interactive Zoom Glass -->
-            <div class="my-4 rounded-2xl bg-space-950/90 p-4 border border-space-800 flex items-center justify-center relative overflow-hidden group">
+            <!-- Product Showcase Image -->
+            <div class="my-4 rounded-2xl bg-royal-950/90 p-4 border border-amber-500/30 flex items-center justify-center relative overflow-hidden group shadow-inner">
               <img src="assets/hero_linear_guides.jpg" alt="Linear Guides & Belts" class="h-44 sm:h-52 object-contain rounded-xl group-hover:scale-105 transition-transform duration-500" />
-              <div class="absolute inset-0 bg-gradient-to-t from-space-950 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-royal-950 via-transparent to-transparent opacity-60 pointer-events-none"></div>
             </div>
 
             <!-- Live HUD Specs -->
             <div class="space-y-2.5 font-mono text-xs">
-              <div class="flex justify-between py-1.5 border-b border-space-800">
-                <span class="text-slate-400">Synchronous Belts:</span>
+              <div class="flex justify-between py-1.5 border-b border-amber-500/20">
+                <span class="text-amber-200/70">Synchronous Belts:</span>
                 <span class="text-white font-bold">Mitsuboshi & Conti (3M - 14M, T10)</span>
               </div>
-              <div class="flex justify-between py-1.5 border-b border-space-800">
-                <span class="text-slate-400">Bearing Precision:</span>
-                <span class="text-amberGlow-400 font-bold">GCr15 Chrome Steel / C3 Clearance</span>
+              <div class="flex justify-between py-1.5 border-b border-amber-500/20">
+                <span class="text-amber-200/70">Bearing Precision:</span>
+                <span class="text-amber-300 font-bold">GCr15 Chrome Steel / C3 Clearance</span>
               </div>
-              <div class="flex justify-between py-1.5 border-b border-space-800">
-                <span class="text-slate-400">Linear Motion:</span>
-                <span class="text-cyanGlow-400 font-bold">HGH / HGW 15mm – 45mm Flange</span>
+              <div class="flex justify-between py-1.5 border-b border-amber-500/20">
+                <span class="text-amber-200/70">Linear Motion:</span>
+                <span class="text-cyan-400 font-bold">HGH / HGW 15mm – 45mm Flange</span>
               </div>
               <div class="flex justify-between py-1.5">
-                <span class="text-slate-400">Sourcing Corridor:</span>
+                <span class="text-amber-200/70">Sourcing Corridor:</span>
                 <span class="text-white font-bold">Masjid Bunder, Mumbai – 400003</span>
               </div>
             </div>
 
-            <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20please%20share%20your%20OEM%20technical%20specs%20and%20catalogs." target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-3 rounded-xl bg-space-850 hover:bg-space-800 text-white font-bold text-xs flex items-center justify-center gap-2 border border-space-700 transition btn-magnetic">
-              <i data-lucide="file-check" class="w-4 h-4 text-emeraldGlow-400"></i>
+            <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20please%20share%20your%20OEM%20technical%20specs%20and%20catalogs." target="_blank" rel="noopener noreferrer" onclick="sound.playChime()" class="mt-4 w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-sunset-500 hover:from-amber-400 hover:to-sunset-400 text-royal-950 font-black text-xs flex items-center justify-center gap-2 transition btn-gold-spring shadow-md">
+              <i data-lucide="file-check" class="w-4 h-4 text-royal-950"></i>
               <span>Request Technical Specs on WhatsApp</span>
             </a>
 
@@ -400,17 +437,17 @@
   <!-- ============================================================
        4. INTERACTIVE "EXPLORE THE MECHANICAL ENGINEERING" (ANATOMY)
   ============================================================ -->
-  <section id="engineering" class="py-14 md:py-20 bg-space-950/60 border-b border-space-800 relative z-10">
+  <section id="engineering" class="py-14 md:py-20 bg-royal-950/70 border-b border-amber-500/20 relative z-10">
     <div class="container-wide">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyanGlow-400 font-bold bg-cyanGlow-500/10 px-3 py-1 rounded-full border border-cyanGlow-500/30">
+        <span class="text-xs font-mono uppercase tracking-widest text-amber-300 font-bold bg-amber-500/15 px-3.5 py-1 rounded-full border border-amber-500/40">
           Component Anatomy & Tolerances
         </span>
         <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mt-2">
           Explore The Mechanical Engineering
         </h2>
-        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+        <p class="text-xs sm:text-sm text-amber-200/80 mt-1">
           Engineered for extreme RPMs, heavy torque dynamics, and long maintenance lifecycles.
         </p>
       </div>
@@ -418,66 +455,66 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Anatomy Card 1: Bearings -->
-        <div class="cinematic-glass rounded-3xl p-6 space-y-4 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-900 border border-space-700 text-amberGlow-400 flex items-center justify-center shadow-md">
+        <div class="gold-glass p-6 space-y-4 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-900 border border-amber-500/40 text-amber-300 flex items-center justify-center shadow-lg shadow-amber-500/20">
             <i data-lucide="circle-dot" class="w-6 h-6"></i>
           </div>
           <h3 class="font-heading font-bold text-lg text-white">Precision Bearing Anatomy</h3>
-          <ul class="space-y-2.5 text-xs text-slate-300">
+          <ul class="space-y-2.5 text-xs text-amber-100/90">
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Inner/Outer Rings:</strong> GCr15 High Carbon Chrome Steel with vacuum degassing.</span>
             </li>
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Rolling Elements:</strong> Grade 10 micro-polished steel balls (V2/V3 vibration).</span>
             </li>
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Sealing:</strong> Synthetic NBR rubber contact lip seal (2RS) or zinc steel shield (2Z).</span>
             </li>
           </ul>
         </div>
 
         <!-- Anatomy Card 2: Timing Belts -->
-        <div class="cinematic-glass rounded-3xl p-6 space-y-4 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-900 border border-space-700 text-cyanGlow-400 flex items-center justify-center shadow-md">
+        <div class="gold-glass p-6 space-y-4 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-900 border border-amber-500/40 text-sunset-500 flex items-center justify-center shadow-lg shadow-sunset-500/20">
             <i data-lucide="disc" class="w-6 h-6"></i>
           </div>
           <h3 class="font-heading font-bold text-lg text-white">Timing Belt Construction</h3>
-          <ul class="space-y-2.5 text-xs text-slate-300">
+          <ul class="space-y-2.5 text-xs text-amber-100/90">
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Tensile Cord:</strong> Continuously wound helically twisted fiberglass cords.</span>
             </li>
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Teeth Facing:</strong> Wear-resistant nylon fabric with anti-friction coating.</span>
             </li>
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Elastomer Body:</strong> High-grade chloroprene compound resisting oil & heat to 100°C.</span>
             </li>
           </ul>
         </div>
 
         <!-- Anatomy Card 3: Linear Motion -->
-        <div class="cinematic-glass rounded-3xl p-6 space-y-4 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-900 border border-space-700 text-emeraldGlow-400 flex items-center justify-center shadow-md">
+        <div class="gold-glass p-6 space-y-4 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-900 border border-amber-500/40 text-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-500/20">
             <i data-lucide="move" class="w-6 h-6"></i>
           </div>
           <h3 class="font-heading font-bold text-lg text-white">Linear Guide Rails & Blocks</h3>
-          <ul class="space-y-2.5 text-xs text-slate-300">
+          <ul class="space-y-2.5 text-xs text-amber-100/90">
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>4-Way Equal Load:</strong> 45-degree contact angle absorbs equal loads in all 4 axes.</span>
             </li>
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Self-Aligning:</strong> Absorbs installation surface deviations for whisper-quiet CNC travel.</span>
             </li>
             <li class="flex items-start gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emeraldGlow-400 shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
               <span><strong>Dust Sealing:</strong> Dual end seals and bottom scrapers keep internal raceways clear.</span>
             </li>
           </ul>
@@ -491,58 +528,58 @@
   <!-- ============================================================
        5. MASTER B2B ENGINEERING & CALCULATION TOOLS SUITE (ALL-IN-ONE)
   ============================================================ -->
-  <section id="tools" class="py-14 md:py-24 bg-space-900 border-b border-space-800 relative z-10">
+  <section id="tools" class="py-14 md:py-24 bg-royal-900 border-b border-amber-500/20 relative z-10">
     <div class="container-wide">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-10">
-        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amberGlow-500/10 text-amberGlow-400 text-xs font-mono font-bold border border-amberGlow-500/30">
-          <i data-lucide="wrench" class="w-3.5 h-3.5"></i> B2B Engineering Calculations & Spec Engine
+        <span class="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-amber-500/15 text-amber-300 text-xs font-mono font-bold border border-amber-500/40">
+          <i data-lucide="wrench" class="w-3.5 h-3.5 text-amber-400"></i> 24K Gold B2B Engineering Suite
         </span>
         <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mt-2">
           Interactive Calculation Tools & Spec Finder
         </h2>
-        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+        <p class="text-xs sm:text-sm text-amber-200/80 mt-1">
           Calculate drive center distances, look up bearing dynamic loads, build multi-item purchase orders & check transport transit ETAs — all right here.
         </p>
       </div>
 
       <!-- Tools Tab Bar Switcher -->
       <div class="flex flex-wrap items-center justify-center gap-2 mb-8" id="toolTabs">
-        <button onclick="switchToolTab('calc-belt')" id="btn-calc-belt" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-cyanGlow-500 to-blue-600 text-space-950 font-extrabold text-xs transition flex items-center gap-2 shadow-lg shadow-cyanGlow-500/20 btn-magnetic">
+        <button onclick="switchToolTab('calc-belt')" id="btn-calc-belt" class="px-5 py-2.5 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 text-royal-950 font-black text-xs transition flex items-center gap-2 shadow-lg shadow-amber-500/30 btn-gold-spring">
           <i data-lucide="calculator" class="w-4 h-4"></i> Timing Belt Calc
         </button>
-        <button onclick="switchToolTab('calc-bearing')" id="btn-calc-bearing" class="px-4 py-2.5 rounded-2xl bg-space-850 hover:bg-space-800 text-slate-300 text-xs font-bold transition flex items-center gap-2 border border-space-700 btn-magnetic">
-          <i data-lucide="circle-dot" class="w-4 h-4 text-amberGlow-400"></i> Bearing Spec Lookup
+        <button onclick="switchToolTab('calc-bearing')" id="btn-calc-bearing" class="px-5 py-2.5 rounded-2xl bg-royal-850 hover:bg-royal-800 text-amber-200 text-xs font-bold transition flex items-center gap-2 border border-amber-500/30 btn-gold-spring">
+          <i data-lucide="circle-dot" class="w-4 h-4 text-amber-400"></i> Bearing Spec Lookup
         </button>
-        <button onclick="switchToolTab('calc-cart')" id="btn-calc-cart" class="px-4 py-2.5 rounded-2xl bg-space-850 hover:bg-space-800 text-slate-300 text-xs font-bold transition flex items-center gap-2 border border-space-700 btn-magnetic">
-          <i data-lucide="shopping-cart" class="w-4 h-4 text-emeraldGlow-400"></i> B2B PO & Slabs
+        <button onclick="switchToolTab('calc-cart')" id="btn-calc-cart" class="px-5 py-2.5 rounded-2xl bg-royal-850 hover:bg-royal-800 text-amber-200 text-xs font-bold transition flex items-center gap-2 border border-amber-500/30 btn-gold-spring">
+          <i data-lucide="shopping-cart" class="w-4 h-4 text-emerald-400"></i> B2B PO & Slabs
         </button>
-        <button onclick="switchToolTab('calc-freight')" id="btn-calc-freight" class="px-4 py-2.5 rounded-2xl bg-space-850 hover:bg-space-800 text-slate-300 text-xs font-bold transition flex items-center gap-2 border border-space-700 btn-magnetic">
-          <i data-lucide="truck" class="w-4 h-4 text-cyanGlow-400"></i> Pan-India Dispatch ETA
+        <button onclick="switchToolTab('calc-freight')" id="btn-calc-freight" class="px-5 py-2.5 rounded-2xl bg-royal-850 hover:bg-royal-800 text-amber-200 text-xs font-bold transition flex items-center gap-2 border border-amber-500/30 btn-gold-spring">
+          <i data-lucide="truck" class="w-4 h-4 text-cyan-400"></i> Pan-India Dispatch ETA
         </button>
       </div>
 
       <!-- ==================== TOOL 1: TIMING BELT CALCULATOR ==================== -->
       <div id="panel-calc-belt" class="tool-panel">
-        <div class="cinematic-glass rounded-3xl p-6 sm:p-8">
+        <div class="gold-glass p-6 sm:p-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-7 space-y-4">
-              <div class="flex items-center gap-2 text-amberGlow-400 font-mono text-xs font-bold">
-                <i data-lucide="calculator" class="w-4 h-4"></i> TOOL 01: TIMING BELT PITCH LENGTH & TEETH ENGINE
+              <div class="flex items-center gap-2 text-amber-300 font-mono text-xs font-bold">
+                <i data-lucide="calculator" class="w-4 h-4 text-amber-400"></i> TOOL 01: TIMING BELT PITCH LENGTH & TEETH ENGINE
               </div>
               <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-white">
                 Drive Geometry & Pulley Center Calculator
               </h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
+              <p class="text-xs text-amber-100/80 leading-relaxed">
                 Compute standard pitch length, exact teeth count, and speed transmission ratio for Mitsuboshi and Conti belt drives.
               </p>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Belt Pitch Profile</label>
-                  <select id="calcPitch" onchange="calculateBelt()" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 font-mono">
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Belt Pitch Profile</label>
+                  <select id="calcPitch" onchange="calculateBelt(); sound.playCalc();" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 font-mono">
                     <option value="3">3M (3mm Pitch - High Speed)</option>
                     <option value="5">5M (5mm Pitch - Medium Torque)</option>
                     <option value="8" selected>8M (8mm Pitch - Heavy Industrial)</option>
@@ -554,54 +591,54 @@
                 </div>
 
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Center Distance (C in mm)</label>
-                  <input type="number" id="calcCenter" value="350" min="50" max="5000" oninput="calculateBelt()" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 font-mono" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Center Distance (C in mm)</label>
+                  <input type="number" id="calcCenter" value="350" min="50" max="5000" oninput="calculateBelt(); sound.playCalc();" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 font-mono" />
                 </div>
 
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Driver Pulley 1 (Teeth Z1)</label>
-                  <input type="number" id="calcTeeth1" value="28" min="10" max="300" oninput="calculateBelt()" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 font-mono" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Driver Pulley 1 (Teeth Z1)</label>
+                  <input type="number" id="calcTeeth1" value="28" min="10" max="300" oninput="calculateBelt(); sound.playCalc();" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 font-mono" />
                 </div>
 
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Driven Pulley 2 (Teeth Z2)</label>
-                  <input type="number" id="calcTeeth2" value="48" min="10" max="300" oninput="calculateBelt()" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 font-mono" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Driven Pulley 2 (Teeth Z2)</label>
+                  <input type="number" id="calcTeeth2" value="48" min="10" max="300" oninput="calculateBelt(); sound.playCalc();" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 font-mono" />
                 </div>
               </div>
             </div>
 
-            <!-- Live Results -->
+            <!-- Live Results Card -->
             <div class="lg:col-span-5">
-              <div class="rounded-2xl bg-space-950 p-5 border border-space-800 space-y-4">
-                <div class="flex items-center justify-between pb-3 border-b border-space-800">
-                  <span class="text-xs font-mono font-bold text-slate-400">CALCULATED METRICS</span>
-                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyanGlow-500/10 text-cyanGlow-400 border border-cyanGlow-500/20">LIVE FORMULA</span>
+              <div class="rounded-2xl bg-royal-950/90 p-5 border border-amber-500/30 space-y-4 shadow-xl">
+                <div class="flex items-center justify-between pb-3 border-b border-amber-500/20">
+                  <span class="text-xs font-mono font-bold text-amber-200">CALCULATED METRICS</span>
+                  <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">LIVE FORMULA</span>
                 </div>
 
                 <div class="space-y-2.5 text-xs font-mono">
-                  <div class="flex justify-between py-1 border-b border-space-800">
-                    <span class="text-slate-400">Pitch Length:</span>
-                    <span id="resLength" class="text-amberGlow-400 font-bold text-sm">-- mm</span>
+                  <div class="flex justify-between py-1 border-b border-amber-500/15">
+                    <span class="text-amber-200/70">Pitch Length:</span>
+                    <span id="resLength" class="text-amber-300 font-black text-sm">-- mm</span>
                   </div>
-                  <div class="flex justify-between py-1 border-b border-space-800">
-                    <span class="text-slate-400">Teeth Count:</span>
+                  <div class="flex justify-between py-1 border-b border-amber-500/15">
+                    <span class="text-amber-200/70">Teeth Count:</span>
                     <span id="resTeeth" class="text-white font-bold">-- Teeth</span>
                   </div>
-                  <div class="flex justify-between py-1 border-b border-space-800">
-                    <span class="text-slate-400">Speed Ratio:</span>
-                    <span id="resRatio" class="text-emeraldGlow-400 font-bold">--</span>
+                  <div class="flex justify-between py-1 border-b border-amber-500/15">
+                    <span class="text-amber-200/70">Speed Ratio:</span>
+                    <span id="resRatio" class="text-emerald-400 font-bold">--</span>
                   </div>
-                  <div class="flex justify-between py-1 border-b border-space-800">
-                    <span class="text-slate-400">Pulley Diameters (PD):</span>
+                  <div class="flex justify-between py-1 border-b border-amber-500/15">
+                    <span class="text-amber-200/70">Pulley Diameters (PD):</span>
                     <span id="resPD" class="text-slate-200">--</span>
                   </div>
                   <div class="flex justify-between py-1">
-                    <span class="text-slate-400">Equivalent Part Code:</span>
-                    <span id="resPartCode" class="text-cyanGlow-400 font-bold">--</span>
+                    <span class="text-amber-200/70">Equivalent Part Code:</span>
+                    <span id="resPartCode" class="text-amber-300 font-bold">--</span>
                   </div>
                 </div>
 
-                <button onclick="orderBeltCalcWhatsApp()" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg transition btn-magnetic">
+                <button onclick="orderBeltCalcWhatsApp(); sound.playChime();" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:to-emerald-500 text-white font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition btn-gold-spring">
                   <i data-lucide="send" class="w-4 h-4"></i>
                   <span>Send Calculated Specs on WhatsApp Desk</span>
                 </button>
@@ -614,24 +651,24 @@
 
       <!-- ==================== TOOL 2: BEARING SPEC LOOKUP ==================== -->
       <div id="panel-calc-bearing" class="tool-panel hidden">
-        <div class="cinematic-glass rounded-3xl p-6 sm:p-8">
+        <div class="gold-glass p-6 sm:p-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-6 space-y-4">
-              <div class="flex items-center gap-2 text-amberGlow-400 font-mono text-xs font-bold">
-                <i data-lucide="circle-dot" class="w-4 h-4"></i> TOOL 02: BEARING DIMENSIONS & LOAD RATING LOOKUP
+              <div class="flex items-center gap-2 text-amber-300 font-mono text-xs font-bold">
+                <i data-lucide="circle-dot" class="w-4 h-4 text-amber-400"></i> TOOL 02: BEARING DIMENSIONS & LOAD RATING LOOKUP
               </div>
               <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-white">
                 Deep Groove, Roller & Mounted Unit Spec Finder
               </h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
+              <p class="text-xs text-amber-100/80 leading-relaxed">
                 Select bearing number to instantly view shaft bore (d), outer diameter (D), width (B), dynamic load rating (Cr kN) and ready warehouse stock in Masjid Bunder.
               </p>
 
               <div class="space-y-3 pt-2">
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Select Bearing Number</label>
-                  <select id="bearingSelect" onchange="lookupBearing()" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 font-mono">
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Select Bearing Number</label>
+                  <select id="bearingSelect" onchange="lookupBearing(); sound.playCalc();" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 font-mono">
                     <option value="6000">6000-2RS (10 x 26 x 8 mm)</option>
                     <option value="6004">6004-2RS (20 x 42 x 12 mm)</option>
                     <option value="6008">6008-2RS (40 x 68 x 15 mm)</option>
@@ -651,16 +688,16 @@
 
                 <div class="grid grid-cols-2 gap-3">
                   <div>
-                    <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Clearance Standard</label>
-                    <select id="bearingClearance" onchange="lookupBearing()" class="w-full px-3 py-2 rounded-xl bg-space-950 border border-space-700 text-white text-xs font-mono">
+                    <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Clearance Standard</label>
+                    <select id="bearingClearance" onchange="lookupBearing(); sound.playCalc();" class="w-full px-3 py-2 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs font-mono">
                       <option value="CN (Normal)">CN (Normal Clearance)</option>
                       <option value="C3 (High Speed)">C3 (High Speed / Heat)</option>
                       <option value="C4 (Extreme)">C4 (Vibratory Heavy)</option>
                     </select>
                   </div>
                   <div>
-                    <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Sealing Grade</label>
-                    <select id="bearingShield" onchange="lookupBearing()" class="w-full px-3 py-2 rounded-xl bg-space-950 border border-space-700 text-white text-xs font-mono">
+                    <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Sealing Grade</label>
+                    <select id="bearingShield" onchange="lookupBearing(); sound.playCalc();" class="w-full px-3 py-2 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs font-mono">
                       <option value="2RS">2RS (Dual Rubber Contact Lip)</option>
                       <option value="2Z">2Z (Dual Steel Dust Shield)</option>
                       <option value="Open">Open (Oil Bath Lubricated)</option>
@@ -672,32 +709,32 @@
 
             <!-- Spec Result Card -->
             <div class="lg:col-span-6">
-              <div class="rounded-2xl bg-space-950 p-5 border border-space-800 space-y-4">
-                <div class="flex items-center justify-between pb-3 border-b border-space-800">
-                  <h4 id="bName" class="font-heading font-bold text-sm text-amberGlow-400 truncate">6205-2RS Deep Groove</h4>
-                  <span id="bStockStatus" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emeraldGlow-500/10 text-emeraldGlow-400 border border-emeraldGlow-500/20 shrink-0">Ready Stock: 1,000+ Pcs</span>
+              <div class="rounded-2xl bg-royal-950/90 p-5 border border-amber-500/30 space-y-4 shadow-xl">
+                <div class="flex items-center justify-between pb-3 border-b border-amber-500/20">
+                  <h4 id="bName" class="font-heading font-bold text-sm text-amber-300 truncate">6205-2RS Deep Groove</h4>
+                  <span id="bStockStatus" class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">Ready Stock: 1,000+ Pcs</span>
                 </div>
 
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-center">
-                  <div class="p-2.5 rounded-xl bg-space-900 border border-space-800">
-                    <p class="text-[10px] text-slate-400">Bore (d)</p>
+                  <div class="p-2.5 rounded-xl bg-royal-900 border border-amber-500/20">
+                    <p class="text-[10px] text-amber-200/70">Bore (d)</p>
                     <p id="bBore" class="font-bold text-white text-base mt-0.5">25 mm</p>
                   </div>
-                  <div class="p-2.5 rounded-xl bg-space-900 border border-space-800">
-                    <p class="text-[10px] text-slate-400">Outer (D)</p>
+                  <div class="p-2.5 rounded-xl bg-royal-900 border border-amber-500/20">
+                    <p class="text-[10px] text-amber-200/70">Outer (D)</p>
                     <p id="bOuter" class="font-bold text-white text-base mt-0.5">52 mm</p>
                   </div>
-                  <div class="p-2.5 rounded-xl bg-space-900 border border-space-800">
-                    <p class="text-[10px] text-slate-400">Width (B)</p>
+                  <div class="p-2.5 rounded-xl bg-royal-900 border border-amber-500/20">
+                    <p class="text-[10px] text-amber-200/70">Width (B)</p>
                     <p id="bWidth" class="font-bold text-white text-base mt-0.5">15 mm</p>
                   </div>
-                  <div class="p-2.5 rounded-xl bg-space-900 border border-space-800">
-                    <p class="text-[10px] text-slate-400">Dyn. Load (Cr)</p>
-                    <p id="bLoad" class="font-bold text-cyanGlow-400 text-base mt-0.5">14.8 kN</p>
+                  <div class="p-2.5 rounded-xl bg-royal-900 border border-amber-500/20">
+                    <p class="text-[10px] text-amber-200/70">Dyn. Load (Cr)</p>
+                    <p id="bLoad" class="font-bold text-amber-300 text-base mt-0.5">14.8 kN</p>
                   </div>
                 </div>
 
-                <button onclick="orderBearingWhatsApp()" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg transition btn-magnetic">
+                <button onclick="orderBearingWhatsApp(); sound.playChime();" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:to-emerald-500 text-white font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition btn-gold-spring">
                   <i data-lucide="message-circle" class="w-4 h-4"></i>
                   <span>Inquire Wholesale Carton Rates for this Bearing</span>
                 </button>
@@ -710,24 +747,24 @@
 
       <!-- ==================== TOOL 3: B2B PURCHASE ORDER BUILDER ==================== -->
       <div id="panel-calc-cart" class="tool-panel hidden">
-        <div class="cinematic-glass rounded-3xl p-6 sm:p-8">
+        <div class="gold-glass p-6 sm:p-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
             <div class="lg:col-span-5 space-y-4">
-              <div class="flex items-center gap-2 text-amberGlow-400 font-mono text-xs font-bold">
-                <i data-lucide="shopping-cart" class="w-4 h-4"></i> TOOL 03: B2B PURCHASE ORDER & VOLUME SLABS
+              <div class="flex items-center gap-2 text-amber-300 font-mono text-xs font-bold">
+                <i data-lucide="shopping-cart" class="w-4 h-4 text-amber-400"></i> TOOL 03: B2B PURCHASE ORDER & VOLUME SLABS
               </div>
               <h3 class="font-heading font-extrabold text-xl text-white">
                 Build Multi-Item Purchase Order (PO)
               </h3>
-              <p class="text-xs text-slate-400">
+              <p class="text-xs text-amber-100/80">
                 Add standard products to estimate tier discounts (5% at 20+ pcs, 10% at 50+ pcs, 15% at 100+ pcs) and 1-click WhatsApp transmission.
               </p>
 
               <div class="space-y-3 pt-2">
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Select Product SKU</label>
-                  <select id="cartProduct" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs font-mono">
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Select Product SKU</label>
+                  <select id="cartProduct" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs font-mono">
                     <option value="Deep Groove Ball Bearing 6205-2RS" data-price="180">Deep Groove Ball Bearing 6205-2RS (₹180/pc)</option>
                     <option value="Deep Groove Ball Bearing 6308-2RS" data-price="420">Deep Groove Ball Bearing 6308-2RS (₹420/pc)</option>
                     <option value="Mitsuboshi Timing Belt 8M-1200" data-price="550">Mitsuboshi Timing Belt 8M-1200 (₹550/pc)</option>
@@ -739,28 +776,28 @@
                 </div>
 
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Quantity (Pieces / Sets)</label>
-                  <input type="number" id="cartQty" value="25" min="1" max="5000" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs font-mono" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Quantity (Pieces / Sets)</label>
+                  <input type="number" id="cartQty" value="25" min="1" max="5000" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs font-mono" />
                 </div>
 
-                <button onclick="addToCart()" class="w-full py-2.5 rounded-xl bg-cyanGlow-600 hover:bg-cyanGlow-500 text-space-950 font-extrabold text-xs flex items-center justify-center gap-2 transition btn-magnetic shadow-md">
-                  <i data-lucide="plus" class="w-4 h-4"></i>
+                <button onclick="addToCart(); sound.playClick();" class="w-full py-3 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-royal-950 font-black text-xs flex items-center justify-center gap-2 transition btn-gold-spring shadow-md">
+                  <i data-lucide="plus" class="w-4 h-4 text-royal-950"></i>
                   <span>Add SKU to Purchase Order</span>
                 </button>
               </div>
             </div>
 
             <div class="lg:col-span-7">
-              <div class="rounded-2xl bg-space-950 p-5 border border-space-800 space-y-4">
-                <div class="flex items-center justify-between pb-2 border-b border-space-800">
-                  <span class="text-xs font-mono font-bold text-slate-300">LIVE B2B ORDER DRAFT</span>
-                  <span class="text-[11px] text-amberGlow-400 font-mono">100% Tax Invoiced</span>
+              <div class="rounded-2xl bg-royal-950/90 p-5 border border-amber-500/30 space-y-4 shadow-xl">
+                <div class="flex items-center justify-between pb-2 border-b border-amber-500/20">
+                  <span class="text-xs font-mono font-bold text-amber-200">LIVE B2B ORDER DRAFT</span>
+                  <span class="text-[11px] text-amber-300 font-mono">100% Tax Invoiced</span>
                 </div>
 
                 <div class="overflow-x-auto max-h-48">
                   <table class="w-full text-left text-xs">
                     <thead>
-                      <tr class="text-slate-400 border-b border-space-800 text-[11px]">
+                      <tr class="text-amber-200/70 border-b border-amber-500/20 text-[11px]">
                         <th class="p-2">Item Description</th>
                         <th class="p-2 text-center">Qty</th>
                         <th class="p-2 text-right">Rate</th>
@@ -768,37 +805,37 @@
                         <th class="p-2 text-center">Del</th>
                       </tr>
                     </thead>
-                    <tbody id="cartTableBody" class="divide-y divide-space-800 text-slate-300">
+                    <tbody id="cartTableBody" class="divide-y divide-amber-500/15 text-slate-200">
                       <!-- Dynamic rows -->
                     </tbody>
                   </table>
                 </div>
 
-                <div class="pt-3 border-t border-space-800 space-y-1.5 font-mono text-xs">
-                  <div class="flex justify-between text-slate-400">
+                <div class="pt-3 border-t border-amber-500/20 space-y-1.5 font-mono text-xs">
+                  <div class="flex justify-between text-amber-200/70">
                     <span>Gross Amount:</span>
                     <span id="sumGross" class="text-white">₹0</span>
                   </div>
-                  <div class="flex justify-between text-emeraldGlow-400">
+                  <div class="flex justify-between text-emerald-400 font-bold">
                     <span id="discountLabel">Volume Slab Discount:</span>
                     <span id="sumDiscount">- ₹0</span>
                   </div>
-                  <div class="flex justify-between text-slate-400">
+                  <div class="flex justify-between text-amber-200/70">
                     <span>GST (18% ITC Eligible):</span>
                     <span id="sumGst" class="text-white">₹0</span>
                   </div>
-                  <div class="pt-2 border-t border-space-800 flex justify-between items-baseline">
+                  <div class="pt-2 border-t border-amber-500/20 flex justify-between items-baseline">
                     <span class="font-bold text-sm text-white">Estimated Order Total:</span>
-                    <span id="sumTotal" class="font-heading font-black text-xl text-amberGlow-400">₹0</span>
+                    <span id="sumTotal" class="font-heading font-black text-xl text-amber-300">₹0</span>
                   </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
-                  <input type="text" id="poBuyerName" placeholder="Buyer / Company Name" class="px-3 py-2 rounded-xl bg-space-900 border border-space-700 text-white text-xs placeholder-slate-500 focus:outline-none focus:border-cyanGlow-400" />
-                  <input type="text" id="poDestination" placeholder="Delivery Destination (e.g. Pune / Vapi)" class="px-3 py-2 rounded-xl bg-space-900 border border-space-700 text-white text-xs placeholder-slate-500 focus:outline-none focus:border-cyanGlow-400" />
+                  <input type="text" id="poBuyerName" placeholder="Buyer / Company Name" class="px-3.5 py-2 rounded-xl bg-royal-900 border border-amber-500/30 text-white text-xs placeholder-amber-200/40 focus:outline-none focus:border-amber-400" />
+                  <input type="text" id="poDestination" placeholder="Delivery Destination (e.g. Pune / Vapi)" class="px-3.5 py-2 rounded-xl bg-royal-900 border border-amber-500/30 text-white text-xs placeholder-amber-200/40 focus:outline-none focus:border-amber-400" />
                 </div>
 
-                <button onclick="sendCartWhatsApp()" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-lg transition btn-magnetic">
+                <button onclick="sendCartWhatsApp(); sound.playChime();" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:to-emerald-500 text-white font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition btn-gold-spring">
                   <i data-lucide="send" class="w-4 h-4"></i>
                   <span>Transmit Official Purchase Order on WhatsApp</span>
                 </button>
@@ -811,23 +848,23 @@
 
       <!-- ==================== TOOL 4: FREIGHT & TRANSIT ETA ==================== -->
       <div id="panel-calc-freight" class="tool-panel hidden">
-        <div class="cinematic-glass rounded-3xl p-6 sm:p-8">
+        <div class="gold-glass p-6 sm:p-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-5 space-y-4">
-              <div class="flex items-center gap-2 text-amberGlow-400 font-mono text-xs font-bold">
-                <i data-lucide="truck" class="w-4 h-4"></i> TOOL 04: PAN-INDIA TRANSPORT & TRANSIT ETA TRACKER
+              <div class="flex items-center gap-2 text-amber-300 font-mono text-xs font-bold">
+                <i data-lucide="truck" class="w-4 h-4 text-amber-400"></i> TOOL 04: PAN-INDIA TRANSPORT & TRANSIT ETA TRACKER
               </div>
               <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-white">
                 Masjid Bunder Logistics Corridor Calculator
               </h3>
-              <p class="text-xs text-slate-400 leading-relaxed">
+              <p class="text-xs text-amber-100/80 leading-relaxed">
                 Select your industrial cluster or state to check daily transport cut-offs, dispatch frequency, and estimated delivery hours from our central Mumbai hub.
               </p>
 
               <div>
-                <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Select Industrial Cluster</label>
-                <select id="freightClusterSelect" onchange="lookupFreight()" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 font-mono">
+                <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Select Industrial Cluster</label>
+                <select id="freightClusterSelect" onchange="lookupFreight(); sound.playCalc();" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 font-mono">
                   <option value="pune" selected>Maharashtra: Pune, Nashik, Aurangabad, Kolhapur</option>
                   <option value="gujarat">Gujarat: Vapi, Surat, Ahmedabad, Vadodara, Rajkot</option>
                   <option value="north">North India: Delhi NCR, Faridabad, Gurgaon, Jaipur, Kanpur</option>
@@ -839,29 +876,29 @@
             </div>
 
             <div class="lg:col-span-7">
-              <div class="rounded-2xl bg-space-950 p-5 border border-space-800 space-y-4">
-                <div class="flex items-center justify-between pb-3 border-b border-space-800">
-                  <h4 id="fTitle" class="font-heading font-bold text-base text-amberGlow-400">Maharashtra Regional Cluster</h4>
-                  <span id="fEta" class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-emeraldGlow-500/20 text-emeraldGlow-400 border border-emeraldGlow-500/30">Next-Day (12 - 24 Hours)</span>
+              <div class="rounded-2xl bg-royal-950/90 p-5 border border-amber-500/30 space-y-4 shadow-xl">
+                <div class="flex items-center justify-between pb-3 border-b border-amber-500/20">
+                  <h4 id="fTitle" class="font-heading font-bold text-base text-amber-300">Maharashtra Regional Cluster</h4>
+                  <span id="fEta" class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Next-Day (12 - 24 Hours)</span>
                 </div>
 
                 <div class="space-y-2 font-mono text-xs">
-                  <div class="flex justify-between py-1.5 border-b border-space-800">
-                    <span class="text-slate-400">Loading Cutoff:</span>
+                  <div class="flex justify-between py-1.5 border-b border-amber-500/15">
+                    <span class="text-amber-200/70">Loading Cutoff:</span>
                     <span id="fCutoff" class="text-white font-bold">Daily 6:30 PM (Masjid Bunder Hub)</span>
                   </div>
-                  <div class="flex justify-between py-1.5 border-b border-space-800">
-                    <span class="text-slate-400">Partner Transporters:</span>
+                  <div class="flex justify-between py-1.5 border-b border-amber-500/15">
+                    <span class="text-amber-200/70">Partner Transporters:</span>
                     <span id="fPartners" class="text-slate-200">V-Trans, Patel Roadways, Ghatge Patil</span>
                   </div>
                   <div class="flex justify-between py-1.5">
-                    <span class="text-slate-400">Tracking Facility:</span>
-                    <span class="text-emeraldGlow-400 font-bold">LR Docket Shared via WhatsApp instantly</span>
+                    <span class="text-amber-200/70">Tracking Facility:</span>
+                    <span class="text-emerald-400 font-bold">LR Docket Shared via WhatsApp instantly</span>
                   </div>
                 </div>
 
-                <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20please%20confirm%20today's%20transport%20loading%20slot%20for%20my%20destination." target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-space-850 hover:bg-space-800 text-white font-bold text-xs flex items-center justify-center gap-2 border border-space-700 transition btn-magnetic">
-                  <i data-lucide="truck" class="w-4 h-4 text-cyanGlow-400"></i>
+                <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20please%20confirm%20today's%20transport%20loading%20slot%20for%20my%20destination." target="_blank" rel="noopener noreferrer" onclick="sound.playChime()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-sunset-500 hover:from-amber-400 hover:to-sunset-400 text-royal-950 font-black text-xs flex items-center justify-center gap-2 transition btn-gold-spring shadow-md">
+                  <i data-lucide="truck" class="w-4 h-4 text-royal-950"></i>
                   <span>Inquire Today's Evening Transport Slot</span>
                 </a>
               </div>
@@ -877,30 +914,30 @@
   <!-- ============================================================
        6. PRODUCT SPECTRUM (12 INDUSTRIAL LINES WITH REAL ASSETS)
   ============================================================ -->
-  <section id="portfolio" class="py-14 md:py-24 bg-space-950/80 border-b border-space-800 relative z-10">
+  <section id="portfolio" class="py-14 md:py-24 bg-royal-950/85 border-b border-amber-500/20 relative z-10">
     <div class="container-wide">
       
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
         <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-cyanGlow-400 font-bold bg-cyanGlow-500/10 px-3 py-1 rounded-full border border-cyanGlow-500/30">
+          <span class="text-xs font-mono uppercase tracking-widest text-amber-300 font-bold bg-amber-500/15 px-3.5 py-1 rounded-full border border-amber-500/40">
             Wholesale Master Inventory
           </span>
           <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mt-2">
             Industrial Product Spectrum
           </h2>
-          <p class="text-xs sm:text-sm text-slate-400 mt-1 max-w-xl">
+          <p class="text-xs sm:text-sm text-amber-200/80 mt-1 max-w-xl">
             Direct wholesale distribution of authentic Japanese and European power transmission belts, high-precision ball & roller bearings, and CNC linear guides.
           </p>
         </div>
 
         <!-- Filter Tabs -->
-        <div class="flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl bg-space-900 border border-space-700 text-xs font-bold font-mono">
-          <button onclick="filterGroup('all')" id="tab-all" class="filter-tab px-3.5 py-2 rounded-xl bg-gradient-to-r from-cyanGlow-500 to-blue-600 text-space-950 transition font-extrabold shadow-md">All (12)</button>
-          <button onclick="filterGroup('belts')" id="tab-belts" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-slate-300 hover:text-white hover:bg-space-800 transition">Belts & Drives</button>
-          <button onclick="filterGroup('bearings')" id="tab-bearings" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-slate-300 hover:text-white hover:bg-space-800 transition">Bearings & Units</button>
-          <button onclick="filterGroup('linear')" id="tab-linear" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-slate-300 hover:text-white hover:bg-space-800 transition">Linear Motion</button>
-          <button onclick="filterGroup('special')" id="tab-special" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-slate-300 hover:text-white hover:bg-space-800 transition">Specialized</button>
+        <div class="flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl bg-royal-900 border border-amber-500/30 text-xs font-bold font-mono">
+          <button onclick="filterGroup('all'); sound.playWarp();" id="tab-all" class="filter-tab px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-royal-950 transition font-black shadow-md">All (12)</button>
+          <button onclick="filterGroup('belts'); sound.playWarp();" id="tab-belts" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-amber-200/80 hover:text-white hover:bg-royal-800 transition">Belts & Drives</button>
+          <button onclick="filterGroup('bearings'); sound.playWarp();" id="tab-bearings" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-amber-200/80 hover:text-white hover:bg-royal-800 transition">Bearings & Units</button>
+          <button onclick="filterGroup('linear'); sound.playWarp();" id="tab-linear" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-amber-200/80 hover:text-white hover:bg-royal-800 transition">Linear Motion</button>
+          <button onclick="filterGroup('special'); sound.playWarp();" id="tab-special" class="filter-tab px-3.5 py-2 rounded-xl bg-transparent text-amber-200/80 hover:text-white hover:bg-royal-800 transition">Specialized</button>
         </div>
       </div>
 
@@ -908,218 +945,218 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="productGrid">
         
         <!-- 01: Mitsuboshi Timing Belts -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="belts">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="belts">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/mitsuboshi_belts.jpg" alt="Mitsuboshi Belts" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyanGlow-500/20 text-cyanGlow-400 border border-cyanGlow-500/30">01. POWER TRANSMISSION</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-amber-500/25 text-amber-300 border border-amber-500/40">01. POWER TRANSMISSION</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Mitsuboshi Timing Belts</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">High-precision synchronous belts made with Japanese chloroprene rubber and fiberglass cords.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-cyanGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">High-precision synchronous belts made with Japanese chloroprene rubber and fiberglass cords.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-300 font-bold">
               Pitches: 3M, 5M, 8M, 14M, S8M, S14M
             </div>
           </div>
-          <button onclick="inquireProduct('Mitsuboshi Timing Belts')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-cyanGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Mitsuboshi Timing Belts'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 02: Industrial Timing Belts -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="belts">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="belts">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/timing_belts.jpg" alt="Industrial Timing Belts" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amberGlow-500/20 text-amberGlow-400 border border-amberGlow-500/30">RUBBER & PU CORED</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-sunset-500/25 text-sunset-500 border border-sunset-500/40">RUBBER & PU CORED</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Industrial Timing Belts</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Open-ended and endless timing belts with steel/Kevlar tension cords for packaging machinery.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-amberGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Open-ended and endless timing belts with steel/Kevlar tension cords for packaging machinery.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-300 font-bold">
               Profiles: T5, T10, AT5, AT10, XL, L, H
             </div>
           </div>
-          <button onclick="inquireProduct('Industrial Timing Belts (PU & Rubber)')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amberGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Industrial Timing Belts (PU & Rubber)'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 03: Conveyor Belts -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="belts">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="belts">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/conveyor_belts.jpg" alt="Conveyor Belts" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emeraldGlow-500/20 text-emeraldGlow-400 border border-emeraldGlow-500/30">02. HEAVY CONVEYORS</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-emerald-500/25 text-emerald-400 border border-emerald-500/40">02. HEAVY CONVEYORS</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Heavy Conveyor Belting</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Multi-ply EP rubber, PVC rough top and heat resistant conveyor rolls for industrial bulk handling.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-emeraldGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Multi-ply EP rubber, PVC rough top and heat resistant conveyor rolls for industrial bulk handling.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-emerald-400 font-bold">
               Grades: EP200 - EP630 (2-Ply to 5-Ply)
             </div>
           </div>
-          <button onclick="inquireProduct('Heavy Conveyor Belting')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-emeraldGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Heavy Conveyor Belting'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 04: Conti Continental Belts -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="belts">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="belts">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/conti_belts.jpg" alt="Conti Belts" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyanGlow-500/20 text-cyanGlow-400 border border-cyanGlow-500/30">GERMAN QUALITY</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-amber-500/25 text-amber-300 border border-amber-500/40">GERMAN QUALITY</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Conti Continental Belts</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Synchroforce, Synchrobelt and Multi-rib V-belts engineered for extreme industrial torque.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-cyanGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Synchroforce, Synchrobelt and Multi-rib V-belts engineered for extreme industrial torque.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-300 font-bold">
               Series: CXP, CXA, Synchrodrive
             </div>
           </div>
-          <button onclick="inquireProduct('Continental Conti Belts')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-cyanGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Continental Conti Belts'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 05: Ball Bearings -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="bearings">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="bearings">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/ball_bearings.jpg" alt="Ball Bearings" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amberGlow-500/20 text-amberGlow-400 border border-amberGlow-500/30">03. BEARINGS</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-amber-500/25 text-amber-300 border border-amber-500/40">03. BEARINGS</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Precision Ball Bearings</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Ultra-smooth rotary ball bearings forged with high-carbon chromium steel (GCr15).</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-amberGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Ultra-smooth rotary ball bearings forged with high-carbon chromium steel (GCr15).</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-300 font-bold">
               Clearance: Normal (CN), C2, C3, C4
             </div>
           </div>
-          <button onclick="inquireProduct('Precision Ball Bearings')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amberGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Precision Ball Bearings'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 06: Deep Groove Ball Bearings -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="bearings">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="bearings">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/deep_groove_bearings.jpg" alt="Deep Groove Bearings" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyanGlow-500/20 text-cyanGlow-400 border border-cyanGlow-500/30">6000 / 6200 SERIES</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-amber-500/25 text-amber-300 border border-amber-500/40">6000 / 6200 SERIES</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Deep Groove Ball Bearings</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Dual rubber sealed (2RS) and steel shielded (2Z) bearings for electric motors and pumps.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-cyanGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Dual rubber sealed (2RS) and steel shielded (2Z) bearings for electric motors and pumps.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-300 font-bold">
               Bore Range: 10mm to 120mm Shafts
             </div>
           </div>
-          <button onclick="inquireProduct('Deep Groove Ball Bearings (6000/6200/6300)')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-cyanGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Deep Groove Ball Bearings (6000/6200/6300)'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 07: Tapered Roller Bearings -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="bearings">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="bearings">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/tapered_roller_bearings.jpg" alt="Tapered Roller Bearings" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amberGlow-500/20 text-amberGlow-400 border border-amberGlow-500/30">HEAVY RADIAL + AXIAL</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-sunset-500/25 text-sunset-500 border border-sunset-500/40">HEAVY RADIAL + AXIAL</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Tapered Roller Bearings</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Heavy-duty conical raceways engineered for severe combined thrust and radial loads.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-amberGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Heavy-duty conical raceways engineered for severe combined thrust and radial loads.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-sunset-500 font-bold">
               Series: 30200, 32200, 33200
             </div>
           </div>
-          <button onclick="inquireProduct('Tapered Roller Bearings')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amberGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Tapered Roller Bearings'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 08: Pillow Block Bearings -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="bearings">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="bearings">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/pillow_block_bearings.jpg" alt="Pillow Block Bearings" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emeraldGlow-500/20 text-emeraldGlow-400 border border-emeraldGlow-500/30">HOUSING UNITS</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-emerald-500/25 text-emerald-400 border border-emerald-500/40">HOUSING UNITS</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Pillow Block Units (UCP/UCF)</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Self-aligning cast iron mounted blocks with insert ball bearings and re-lubrication nipples.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-emeraldGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Self-aligning cast iron mounted blocks with insert ball bearings and re-lubrication nipples.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-emerald-400 font-bold">
               Types: UCP, UCF, UCFL, UCT
             </div>
           </div>
-          <button onclick="inquireProduct('Pillow Block Bearings (UCP/UCF)')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-emeraldGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Pillow Block Bearings (UCP/UCF)'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 09: Linear Guides & Rails -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="linear">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="linear">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/linear_guides.jpg" alt="Linear Guides" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyanGlow-500/20 text-cyanGlow-400 border border-cyanGlow-500/30">04. LINEAR MOTION</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-cyan-500/25 text-cyan-400 border border-cyan-500/40">04. LINEAR MOTION</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Linear Guide Rails & Blocks</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Precision recirculating ball profile rails and carriage blocks for CNC routers and robotics.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-cyanGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Precision recirculating ball profile rails and carriage blocks for CNC routers and robotics.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-cyan-400 font-bold">
               Series: HGH15-45, HGW, MGN Miniature
             </div>
           </div>
-          <button onclick="inquireProduct('Linear Guide Rails & Blocks')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-cyanGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Linear Guide Rails & Blocks'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 10: Milking Machine Parts -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="special">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="special">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/milking_machine_parts.jpg" alt="Milking Machine Parts" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emeraldGlow-500/20 text-emeraldGlow-400 border border-emeraldGlow-500/30">05. SPECIALIZED</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-emerald-500/25 text-emerald-400 border border-emerald-500/40">05. SPECIALIZED</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Milking Machine Components</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Food-grade silicone teat liners, stainless steel claws, vacuum regulators and pulsators.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-emeraldGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Food-grade silicone teat liners, stainless steel claws, vacuum regulators and pulsators.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-emerald-400 font-bold">
               Dairy Grade Stainless Steel + Silicone
             </div>
           </div>
-          <button onclick="inquireProduct('Milking Machine Spare Parts')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-emeraldGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Milking Machine Spare Parts'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 11: Automotive Grease -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="special">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="special">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/automotive_grease.jpg" alt="Automotive Grease" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amberGlow-500/20 text-amberGlow-400 border border-amberGlow-500/30">LUBRICATION</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-amber-500/25 text-amber-300 border border-amber-500/40">LUBRICATION</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">High-Temp Automotive Grease</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Lithium complex AP3 & EP2 extreme pressure grease for extended bearing lifecycle.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-amberGlow-400">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Lithium complex AP3 & EP2 extreme pressure grease for extended bearing lifecycle.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-300 font-bold">
               Grades: AP3, EP2, Complex (Buckets / Tubes)
             </div>
           </div>
-          <button onclick="inquireProduct('High-Grade Automotive Grease')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amberGlow-400"></i> Request Technical Quotation
+          <button onclick="inquireProduct('High-Grade Automotive Grease'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
         <!-- 12: Cotton Fabric -->
-        <div class="item-card cinematic-glass rounded-3xl p-4 flex flex-col justify-between tilt-card" data-group="special">
+        <div class="item-card gold-glass p-4 flex flex-col justify-between tilt-card" data-group="special">
           <div>
-            <div class="h-44 rounded-2xl bg-space-950 border border-space-800 flex items-center justify-center p-3 mb-3 relative overflow-hidden group">
+            <div class="h-44 rounded-2xl bg-royal-950 border border-amber-500/25 flex items-center justify-center p-3 mb-3 relative overflow-hidden group shadow-inner">
               <img src="assets/cotton_fabric.jpg" alt="Cotton Fabric" class="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-700 text-slate-300">INDUSTRIAL TEXTILES</span>
+              <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-black bg-royal-900 text-amber-200 border border-amber-500/30">INDUSTRIAL TEXTILES</span>
             </div>
             <h3 class="font-heading font-bold text-base text-white">Industrial Cotton Fabric</h3>
-            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Heavy density woven cotton canvas rolls for machinery insulation, filtration & wiping.</p>
-            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-space-950 border border-space-800 text-[11px] font-mono text-slate-300">
+            <p class="text-xs text-amber-100/80 mt-1 leading-relaxed">Heavy density woven cotton canvas rolls for machinery insulation, filtration & wiping.</p>
+            <div class="mt-3 py-1.5 px-2.5 rounded-xl bg-royal-950 border border-amber-500/20 text-[11px] font-mono text-amber-200 font-bold">
               Packaging: Bulk Master Rolls & Bales
             </div>
           </div>
-          <button onclick="inquireProduct('Industrial Cotton Fabric Rolls')" class="mt-4 w-full py-2.5 rounded-xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold transition flex items-center justify-center gap-1.5 btn-magnetic border border-space-700">
-            <i data-lucide="message-square" class="w-3.5 h-3.5 text-slate-300"></i> Request Technical Quotation
+          <button onclick="inquireProduct('Industrial Cotton Fabric Rolls'); sound.playChime();" class="mt-4 w-full py-2.5 rounded-xl bg-royal-900 hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 hover:text-royal-950 text-amber-200 text-xs font-bold transition flex items-center justify-center gap-1.5 btn-gold-spring border border-amber-500/30">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-400"></i> Request Technical Quotation
           </button>
         </div>
 
@@ -1129,13 +1166,13 @@
   </section>
 
   <!-- ============================================================
-       7. "INDUSTRIES WE POWER" (BENTO GRID WITH NEON HOVER)
+       7. "INDUSTRIES WE POWER" (BENTO GRID WITH 24K GOLD NEON)
   ============================================================ -->
-  <section id="industries" class="py-14 md:py-20 bg-space-900 border-b border-space-800 relative z-10">
+  <section id="industries" class="py-14 md:py-20 bg-royal-900 border-b border-amber-500/20 relative z-10">
     <div class="container-wide">
       
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyanGlow-400 font-bold bg-cyanGlow-500/10 px-3 py-1 rounded-full border border-cyanGlow-500/30">
+        <span class="text-xs font-mono uppercase tracking-widest text-amber-300 font-bold bg-amber-500/15 px-3.5 py-1 rounded-full border border-amber-500/40">
           Industrial Applications
         </span>
         <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mt-2">
@@ -1145,36 +1182,36 @@
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         
-        <div class="p-5 rounded-3xl cinematic-glass text-center space-y-3 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-950 border border-space-800 text-cyanGlow-400 flex items-center justify-center mx-auto shadow-inner">
+        <div class="p-5 gold-glass text-center space-y-3 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-950 border border-amber-500/40 text-amber-400 flex items-center justify-center mx-auto shadow-inner">
             <i data-lucide="factory" class="w-6 h-6"></i>
           </div>
           <h4 class="font-heading font-bold text-sm text-white">Manufacturing & Packaging</h4>
-          <p class="text-[11px] text-slate-400">Carton gluers, high-speed wrapping & bottling drives.</p>
+          <p class="text-[11px] text-amber-100/70">Carton gluers, high-speed wrapping & bottling drives.</p>
         </div>
 
-        <div class="p-5 rounded-3xl cinematic-glass text-center space-y-3 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-950 border border-space-800 text-amberGlow-400 flex items-center justify-center mx-auto shadow-inner">
+        <div class="p-5 gold-glass text-center space-y-3 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-950 border border-amber-500/40 text-sunset-500 flex items-center justify-center mx-auto shadow-inner">
             <i data-lucide="cpu" class="w-6 h-6"></i>
           </div>
           <h4 class="font-heading font-bold text-sm text-white">CNC & Machine Tools</h4>
-          <p class="text-[11px] text-slate-400">Linear routing, 3-axis mills, spindle drives & lathe beds.</p>
+          <p class="text-[11px] text-amber-100/70">Linear routing, 3-axis mills, spindle drives & lathe beds.</p>
         </div>
 
-        <div class="p-5 rounded-3xl cinematic-glass text-center space-y-3 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-950 border border-space-800 text-emeraldGlow-400 flex items-center justify-center mx-auto shadow-inner">
+        <div class="p-5 gold-glass text-center space-y-3 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-950 border border-amber-500/40 text-emerald-400 flex items-center justify-center mx-auto shadow-inner">
             <i data-lucide="truck" class="w-6 h-6"></i>
           </div>
           <h4 class="font-heading font-bold text-sm text-white">Logistics & Conveyors</h4>
-          <p class="text-[11px] text-slate-400">Warehouse sorting belts, bucket elevators & crushers.</p>
+          <p class="text-[11px] text-amber-100/70">Warehouse sorting belts, bucket elevators & crushers.</p>
         </div>
 
-        <div class="p-5 rounded-3xl cinematic-glass text-center space-y-3 tilt-card">
-          <div class="w-12 h-12 rounded-2xl bg-space-950 border border-space-800 text-cyanGlow-400 flex items-center justify-center mx-auto shadow-inner">
+        <div class="p-5 gold-glass text-center space-y-3 tilt-card">
+          <div class="w-12 h-12 rounded-2xl bg-royal-950 border border-amber-500/40 text-cyan-400 flex items-center justify-center mx-auto shadow-inner">
             <i data-lucide="wheat" class="w-6 h-6"></i>
           </div>
           <h4 class="font-heading font-bold text-sm text-white">Dairy & Agriculture</h4>
-          <p class="text-[11px] text-slate-400">Milking machine lines, pulsator circuits & food pumps.</p>
+          <p class="text-[11px] text-amber-100/70">Milking machine lines, pulsator circuits & food pumps.</p>
         </div>
 
       </div>
@@ -1185,56 +1222,56 @@
   <!-- ============================================================
        8. LOGISTICS, SOURCING & TRADE CORRIDORS
   ============================================================ -->
-  <section id="logistics" class="py-14 md:py-20 bg-space-950 border-b border-space-800 relative z-10">
+  <section id="logistics" class="py-14 md:py-20 bg-royal-950 border-b border-amber-500/20 relative z-10">
     <div class="container-wide">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         <div class="lg:col-span-6 space-y-5">
-          <span class="text-xs font-mono uppercase tracking-widest text-amberGlow-400 font-bold bg-amberGlow-500/10 px-3 py-1 rounded-full border border-amberGlow-500/30">
+          <span class="text-xs font-mono uppercase tracking-widest text-amber-300 font-bold bg-amber-500/15 px-3.5 py-1 rounded-full border border-amber-500/40">
             Mumbai Central Logistics Linkage
           </span>
           <h2 class="font-heading font-black text-2xl sm:text-4xl text-white leading-tight">
             Direct Masjid Bunder Wholesale Hub & Pan-India Corridors
           </h2>
-          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p class="text-xs sm:text-sm text-amber-100/80 leading-relaxed">
             Located on Yusuf Meherali Road — Mumbai’s historic mechanical and hardware trading core — M/s Belubeari Exim bridges direct OEM importers with industrial plants nationwide.
           </p>
 
           <div class="space-y-2.5 font-mono text-xs">
-            <div class="p-3 rounded-2xl bg-space-900 border border-space-800 flex items-center justify-between">
-              <span class="text-slate-300">⚡ Maharashtra & Gujarat (Same/Next Day):</span>
-              <span class="text-emeraldGlow-400 font-bold">Pune, Vapi, Surat, Ahmedabad</span>
+            <div class="p-3.5 rounded-2xl bg-royal-900 border border-amber-500/30 flex items-center justify-between shadow-sm">
+              <span class="text-amber-100/90">⚡ Maharashtra & Gujarat (Same/Next Day):</span>
+              <span class="text-emerald-400 font-black">Pune, Vapi, Surat, Ahmedabad</span>
             </div>
-            <div class="p-3 rounded-2xl bg-space-900 border border-space-800 flex items-center justify-between">
-              <span class="text-slate-300">⚡ North & Central Corridors (24-48h):</span>
-              <span class="text-amberGlow-400 font-bold">Delhi NCR, Indore, Jaipur, Kanpur</span>
+            <div class="p-3.5 rounded-2xl bg-royal-900 border border-amber-500/30 flex items-center justify-between shadow-sm">
+              <span class="text-amber-100/90">⚡ North & Central Corridors (24-48h):</span>
+              <span class="text-amber-300 font-black">Delhi NCR, Indore, Jaipur, Kanpur</span>
             </div>
-            <div class="p-3 rounded-2xl bg-space-900 border border-space-800 flex items-center justify-between">
-              <span class="text-slate-300">⚡ South & East Clusters (48-72h):</span>
-              <span class="text-cyanGlow-400 font-bold">Bengaluru, Chennai, Hyderabad</span>
+            <div class="p-3.5 rounded-2xl bg-royal-900 border border-amber-500/30 flex items-center justify-between shadow-sm">
+              <span class="text-amber-100/90">⚡ South & East Clusters (48-72h):</span>
+              <span class="text-cyan-400 font-black">Bengaluru, Chennai, Hyderabad</span>
             </div>
           </div>
         </div>
 
         <div class="lg:col-span-6">
-          <div class="cinematic-glass rounded-3xl p-6 space-y-4">
+          <div class="gold-glass p-6 space-y-4">
             <h4 class="font-heading font-bold text-base text-white flex items-center gap-2">
-              <i data-lucide="shield-check" class="w-5 h-5 text-emeraldGlow-400"></i>
+              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"></i>
               B2B Quality Assurance & Tax Standards
             </h4>
             <div class="grid grid-cols-2 gap-3 text-xs">
-              <div class="p-3.5 rounded-2xl bg-space-950 border border-space-800">
+              <div class="p-3.5 rounded-2xl bg-royal-950 border border-amber-500/30 shadow-inner">
                 <p class="font-bold text-white">Full GST Compliance</p>
-                <p class="text-[11px] text-slate-400 mt-1">100% Tax invoices with exact HSN codes for instant ITC claims.</p>
+                <p class="text-[11px] text-amber-200/70 mt-1">100% Tax invoices with exact HSN codes for instant ITC claims.</p>
               </div>
-              <div class="p-3.5 rounded-2xl bg-space-950 border border-space-800">
+              <div class="p-3.5 rounded-2xl bg-royal-950 border border-amber-500/30 shadow-inner">
                 <p class="font-bold text-white">Authentic Master Pack</p>
-                <p class="text-[11px] text-slate-400 mt-1">Direct Japanese & German OEM batch trace verification.</p>
+                <p class="text-[11px] text-amber-200/70 mt-1">Direct Japanese & German OEM batch trace verification.</p>
               </div>
             </div>
-            <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20please%20share%20your%20company%20GST%20and%20bank%20details%20for%20vendor%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-2xl bg-space-850 hover:bg-space-800 text-white text-xs font-bold flex items-center justify-center gap-2 border border-space-700 transition btn-magnetic">
-              <i data-lucide="file-check" class="w-4 h-4 text-amberGlow-400"></i> Vendor Onboarding & Verification Inquiry
+            <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20please%20share%20your%20company%20GST%20and%20bank%20details%20for%20vendor%20onboarding." target="_blank" rel="noopener noreferrer" onclick="sound.playChime()" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-sunset-500 hover:from-amber-400 hover:to-sunset-400 text-royal-950 font-black text-xs flex items-center justify-center gap-2 transition btn-gold-spring shadow-lg shadow-amber-500/20">
+              <i data-lucide="file-check" class="w-4 h-4 text-royal-950"></i> Vendor Onboarding & Verification Inquiry
             </a>
           </div>
         </div>
@@ -1247,7 +1284,7 @@
   <!-- ============================================================
        9. COMMERCIAL RFQ FORM & DIRECT CONTACT DESK
   ============================================================ -->
-  <section id="rfq-desk" class="py-14 md:py-20 bg-space-900 border-b border-space-800 relative z-10">
+  <section id="rfq-desk" class="py-14 md:py-20 bg-royal-900 border-b border-amber-500/20 relative z-10">
     <div class="container-wide">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -1255,61 +1292,61 @@
         <!-- Corporate Address & Details -->
         <div class="lg:col-span-5 space-y-5">
           <div>
-            <span class="text-xs font-mono uppercase tracking-widest text-cyanGlow-400 font-bold bg-cyanGlow-500/10 px-3 py-1 rounded-full border border-cyanGlow-500/30">
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-300 font-bold bg-amber-500/15 px-3.5 py-1 rounded-full border border-amber-500/40">
               Corporate Headquarters
             </span>
             <h2 class="font-heading font-black text-2xl sm:text-3xl text-white mt-2">
               M/s Belubeari Exim
             </h2>
-            <p class="text-xs text-slate-400 mt-1">Registered Wholesale & Distribution Entity</p>
+            <p class="text-xs text-amber-200/80 mt-1">Registered Wholesale & Distribution Entity</p>
           </div>
 
           <div class="space-y-3 text-xs sm:text-sm">
-            <div class="p-4 rounded-2xl bg-space-950 border border-space-800 space-y-1">
+            <div class="p-4 rounded-2xl bg-royal-950 border border-amber-500/30 space-y-1 shadow-md">
               <strong class="text-white block font-heading font-bold text-sm">Commercial Address</strong>
-              <p class="text-slate-300 leading-relaxed">
+              <p class="text-amber-100/90 leading-relaxed">
                 Office No. 8, 2nd Floor, 261/263, Yusuf Meherali Road,<br />
                 Masjid Bunder, Mumbai – 400003, Maharashtra, India.
               </p>
             </div>
 
-            <div class="p-4 rounded-2xl bg-space-950 border border-space-800 space-y-1">
+            <div class="p-4 rounded-2xl bg-royal-950 border border-amber-500/30 space-y-1 shadow-md">
               <strong class="text-white block font-heading font-bold text-sm">Direct Contact Desk</strong>
-              <p class="text-slate-300">
-                Phone & WhatsApp: <a href="tel:+919967384878" class="font-bold text-cyanGlow-400 hover:underline">+91 99673 84878</a><br />
+              <p class="text-amber-100/90">
+                Phone & WhatsApp: <a href="tel:+919967384878" class="font-black text-amber-300 hover:underline">+91 99673 84878</a><br />
                 Hours: Monday – Saturday: 10:00 AM to 7:30 PM
               </p>
             </div>
           </div>
         </div>
 
-        <!-- 10-Second Quick B2B Commercial Inquiry Form -->
+        <!-- Quick B2B Commercial Inquiry Form -->
         <div class="lg:col-span-7">
-          <div class="cinematic-glass border-beam rounded-3xl p-6 sm:p-8 space-y-4">
+          <div class="gold-glass gold-border-beam p-6 sm:p-8 space-y-4">
             <div>
-              <span class="text-[10px] font-mono font-bold uppercase text-emeraldGlow-400 bg-emeraldGlow-500/10 px-2.5 py-0.5 rounded border border-emeraldGlow-500/30">
+              <span class="text-[10px] font-mono font-bold uppercase text-emerald-300 bg-emerald-500/20 px-3 py-0.5 rounded-full border border-emerald-500/40">
                 ⚡ Direct WhatsApp Desk Inquiry
               </span>
               <h3 class="font-heading font-bold text-xl text-white mt-1">Submit Purchase Specifications</h3>
-              <p class="text-xs text-slate-400">Provide required part codes, quantities, and destination for instantaneous quotation response.</p>
+              <p class="text-xs text-amber-100/70">Provide required part codes, quantities, and destination for instantaneous quotation response.</p>
             </div>
 
             <form onsubmit="handleCommercialRfq(event)" class="space-y-3.5">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Company / Buyer Name *</label>
-                  <input type="text" id="rfqName" required placeholder="e.g. Precision Machine Works" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 transition" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Company / Buyer Name *</label>
+                  <input type="text" id="rfqName" required placeholder="e.g. Precision Machine Works" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 transition" />
                 </div>
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Contact Phone / WhatsApp *</label>
-                  <input type="tel" id="rfqPhone" required placeholder="+91 99XXXXXXXX" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 transition" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Contact Phone / WhatsApp *</label>
+                  <input type="tel" id="rfqPhone" required placeholder="+91 99XXXXXXXX" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 transition" />
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Primary Product Line *</label>
-                  <select id="rfqProduct" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 transition">
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Primary Product Line *</label>
+                  <select id="rfqProduct" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 transition">
                     <option value="Mitsuboshi & Conti Timing Belts">Mitsuboshi & Conti Timing Belts</option>
                     <option value="Heavy Conveyor Belts">Heavy Conveyor Belting</option>
                     <option value="Deep Groove Ball Bearings">Deep Groove Ball Bearings (6000/6200/6300)</option>
@@ -1323,17 +1360,17 @@
                   </select>
                 </div>
                 <div>
-                  <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Estimated Quantity / Part Numbers</label>
-                  <input type="text" id="rfqQty" placeholder="e.g. 50 Pcs 8M-1200 / 100 Pcs 6205-2RS" class="w-full px-3.5 py-2.5 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 transition" />
+                  <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Estimated Quantity / Part Numbers</label>
+                  <input type="text" id="rfqQty" placeholder="e.g. 50 Pcs 8M-1200 / 100 Pcs 6205-2RS" class="w-full px-3.5 py-2.5 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 transition" />
                 </div>
               </div>
 
               <div>
-                <label class="block text-[11px] font-bold text-slate-300 uppercase mb-1">Destination City & Technical Notes</label>
-                <textarea id="rfqNotes" rows="2" placeholder="e.g. Pune plant. Need delivery proforma by today evening." class="w-full px-3.5 py-2 rounded-xl bg-space-950 border border-space-700 text-white text-xs focus:outline-none focus:border-cyanGlow-400 transition"></textarea>
+                <label class="block text-[11px] font-bold text-amber-200 uppercase mb-1">Destination City & Technical Notes</label>
+                <textarea id="rfqNotes" rows="2" placeholder="e.g. Pune plant. Need delivery proforma by today evening." class="w-full px-3.5 py-2 rounded-xl bg-royal-950 border border-amber-500/30 text-white text-xs focus:outline-none focus:border-amber-400 transition"></textarea>
               </div>
 
-              <button type="submit" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition btn-magnetic shadow-lg shadow-emerald-600/20">
+              <button type="submit" onclick="sound.playChime()" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-400 hover:to-emerald-500 text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition btn-gold-spring shadow-lg shadow-emerald-600/30">
                 <i data-lucide="send" class="w-4 h-4"></i>
                 <span>Transmit Inquiry to WhatsApp Sales Engineer</span>
               </button>
@@ -1349,37 +1386,37 @@
   <!-- ============================================================
        10. FOOTER
   ============================================================ -->
-  <footer class="bg-space-950 text-slate-400 text-xs py-10 border-t border-space-800 relative z-10">
+  <footer class="bg-royal-950 text-amber-200/60 text-xs py-10 border-t border-amber-500/20 relative z-10">
     <div class="container-wide flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
       <div>
         <p class="text-white font-bold text-sm">M/s Belubeari Exim</p>
-        <p class="text-slate-400 text-[11px] mt-0.5">Trader, Wholesaler & Distributor of Industrial Transmission & Mechanical Components • Estd. 2018</p>
-        <p class="text-slate-500 text-[10px] mt-0.5">Office No. 8, 2nd Floor, 261/263, Yusuf Meherali Road, Masjid Bunder, Mumbai – 400003, India.</p>
+        <p class="text-amber-200/80 text-[11px] mt-0.5">Trader, Wholesaler & Distributor of Industrial Transmission & Mechanical Components • Estd. 2018</p>
+        <p class="text-amber-200/60 text-[10px] mt-0.5">Office No. 8, 2nd Floor, 261/263, Yusuf Meherali Road, Masjid Bunder, Mumbai – 400003, India.</p>
       </div>
-      <div class="font-mono text-[11px] text-slate-500">
+      <div class="font-mono text-[11px] text-amber-300 font-bold">
         &copy; <span id="year">2026</span> Belubeari Exim. All rights reserved.
       </div>
     </div>
   </footer>
 
   <!-- ============================================================
-       11. STICKY MOBILE DOCK (CINEMATIC GLASS)
+       11. STICKY MOBILE DOCK (24K GOLD LUXURY GLASS)
   ============================================================ -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-space-950/90 backdrop-blur-xl border-t border-space-800 p-2 sm:hidden shadow-2xl">
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-royal-950/95 backdrop-blur-2xl border-t border-amber-500/30 p-2 sm:hidden shadow-2xl">
     <div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-bold font-mono">
-      <a href="#portfolio" class="py-2 rounded-xl bg-space-900 text-slate-300 border border-space-800 btn-magnetic">
-        <i data-lucide="grid" class="w-4 h-4 mx-auto text-cyanGlow-400 mb-0.5"></i>
+      <a href="#portfolio" onclick="sound.playHover()" class="py-2 rounded-xl bg-royal-900 text-amber-200 border border-amber-500/25 btn-gold-spring">
+        <i data-lucide="grid" class="w-4 h-4 mx-auto text-amber-400 mb-0.5"></i>
         <span>Catalog</span>
       </a>
-      <a href="#tools" class="py-2 rounded-xl bg-space-900 text-slate-300 border border-space-800 btn-magnetic">
-        <i data-lucide="calculator" class="w-4 h-4 mx-auto text-amberGlow-400 mb-0.5"></i>
+      <a href="#tools" onclick="sound.playCalc()" class="py-2 rounded-xl bg-royal-900 text-amber-200 border border-amber-500/25 btn-gold-spring">
+        <i data-lucide="calculator" class="w-4 h-4 mx-auto text-amber-300 mb-0.5"></i>
         <span>Tools</span>
       </a>
-      <a href="tel:+919967384878" class="py-2 rounded-xl bg-space-900 text-slate-300 border border-space-800 btn-magnetic">
-        <i data-lucide="phone-call" class="w-4 h-4 mx-auto text-emeraldGlow-400 mb-0.5"></i>
+      <a href="tel:+919967384878" onclick="sound.playClick()" class="py-2 rounded-xl bg-royal-900 text-amber-200 border border-amber-500/25 btn-gold-spring">
+        <i data-lucide="phone-call" class="w-4 h-4 mx-auto text-emerald-400 mb-0.5"></i>
         <span>Call</span>
       </a>
-      <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20I%20have%20an%20urgent%20industrial%20part%20enquiry." target="_blank" rel="noopener noreferrer" class="py-2 rounded-xl bg-emerald-600 text-white btn-magnetic shadow-sm">
+      <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20I%20have%20an%20urgent%20industrial%20part%20enquiry." target="_blank" rel="noopener noreferrer" onclick="sound.playChime()" class="py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white btn-gold-spring shadow-md">
         <i data-lucide="message-circle" class="w-4 h-4 mx-auto text-white mb-0.5"></i>
         <span>WhatsApp</span>
       </a>
@@ -1387,19 +1424,145 @@
   </div>
 
   <!-- ============================================================
-       12. JAVASCRIPT MASTER ENGINES (CALCULATIONS + 3D PARALLAX + CANVAS)
+       12. JAVASCRIPT MASTER ENGINES (WEB AUDIO API + 24K GOLD PARTICLES)
   ============================================================ -->
   <script>
     lucide.createIcons();
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // -------------------------------------------------------------
-    // A. BACKGROUND PARTICLE CANVAS (CONSTELLATION NETWORK)
+    // A. PROCEDURAL WEB AUDIO API SYNTHESIZER (ZERO EXTERNAL FILES)
     // -------------------------------------------------------------
-    const canvas = document.getElementById('particleCanvas');
+    let audioCtx = null;
+    let audioEnabled = true;
+
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContextClass();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    const sound = {
+      playClick() {
+        if (!audioEnabled) return;
+        try {
+          const ctx = getAudioContext();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(620, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(140, ctx.currentTime + 0.08);
+          gain.gain.setValueAtTime(0.2, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.08);
+        } catch(e) {}
+      },
+
+      playHover() {
+        if (!audioEnabled) return;
+        try {
+          const ctx = getAudioContext();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(540, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(980, ctx.currentTime + 0.05);
+          gain.gain.setValueAtTime(0.06, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.05);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.05);
+        } catch(e) {}
+      },
+
+      playCalc() {
+        if (!audioEnabled) return;
+        try {
+          const ctx = getAudioContext();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, ctx.currentTime);
+          osc.frequency.setValueAtTime(1174, ctx.currentTime + 0.03);
+          gain.gain.setValueAtTime(0.12, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.07);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.07);
+        } catch(e) {}
+      },
+
+      playChime() {
+        if (!audioEnabled) return;
+        try {
+          const ctx = getAudioContext();
+          const notes = [523.25, 659.25, 783.99, 1046.50]; // C Major Golden Chord
+          notes.forEach((freq, idx) => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.04);
+            gain.gain.setValueAtTime(0.15, ctx.currentTime + idx * 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.04 + 0.35);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(ctx.currentTime + idx * 0.04);
+            osc.stop(ctx.currentTime + idx * 0.04 + 0.35);
+          });
+        } catch(e) {}
+      },
+
+      playWarp() {
+        if (!audioEnabled) return;
+        try {
+          const ctx = getAudioContext();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(120, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(680, ctx.currentTime + 0.12);
+          gain.gain.setValueAtTime(0.12, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.14);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.14);
+        } catch(e) {}
+      }
+    };
+
+    function toggleAudio() {
+      audioEnabled = !audioEnabled;
+      const label = document.getElementById('audioLabel');
+      const icon = document.getElementById('audioIcon');
+      if (audioEnabled) {
+        label.textContent = 'Sound FX: ON';
+        icon.setAttribute('data-lucide', 'volume-2');
+        sound.playChime();
+      } else {
+        label.textContent = 'Sound FX: OFF';
+        icon.setAttribute('data-lucide', 'volume-x');
+      }
+      lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------
+    // B. 24K GOLD SPARKS & PARTICLES CANVAS (TRANSPARENT PHYSICS)
+    // -------------------------------------------------------------
+    const canvas = document.getElementById('sparkCanvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
-    let mouse = { x: null, y: null };
+    let clickSparks = [];
 
     function resizeCanvas() {
       canvas.width = window.innerWidth;
@@ -1408,14 +1571,14 @@
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    class Particle {
+    class GoldParticle {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 1.8 + 0.6;
-        this.speedX = (Math.random() - 0.5) * 0.4;
-        this.speedY = (Math.random() - 0.5) * 0.4;
-        this.color = Math.random() > 0.5 ? 'rgba(34, 211, 238, ' : 'rgba(245, 158, 11, ';
+        this.size = Math.random() * 2.2 + 0.8;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.5;
+        this.color = Math.random() > 0.4 ? 'rgba(251, 191, 36, ' : 'rgba(249, 115, 22, ';
       }
       update() {
         this.x += this.speedX;
@@ -1425,7 +1588,7 @@
         if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
       }
       draw() {
-        ctx.fillStyle = this.color + '0.7)';
+        ctx.fillStyle = this.color + '0.85)';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
@@ -1434,15 +1597,33 @@
 
     function initParticles() {
       particles = [];
-      const count = Math.min(Math.floor(window.innerWidth / 22), 65);
+      const count = Math.min(Math.floor(window.innerWidth / 20), 70);
       for (let i = 0; i < count; i++) {
-        particles.push(new Particle());
+        particles.push(new GoldParticle());
       }
     }
     initParticles();
 
-    function animateParticles() {
+    // Click Supernova Spurt
+    window.addEventListener('click', (e) => {
+      sound.playClick();
+      for (let i = 0; i < 20; i++) {
+        clickSparks.push({
+          x: e.clientX,
+          y: e.clientY,
+          vx: (Math.random() - 0.5) * 7,
+          vy: (Math.random() - 0.5) * 7,
+          life: 1,
+          size: Math.random() * 3 + 1,
+          color: Math.random() > 0.5 ? '251, 191, 36' : '249, 115, 22'
+        });
+      }
+    });
+
+    function animateCanvas() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Render floating particles & constellation lines
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].draw();
@@ -1452,9 +1633,9 @@
           const dy = particles[i].y - particles[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 110) {
-            ctx.strokeStyle = `rgba(34, 211, 238, ${0.15 * (1 - dist / 110)})`;
-            ctx.lineWidth = 0.6;
+          if (dist < 115) {
+            ctx.strokeStyle = `rgba(251, 191, 36, ${0.18 * (1 - dist / 115)})`;
+            ctx.lineWidth = 0.8;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -1462,12 +1643,30 @@
           }
         }
       }
-      requestAnimationFrame(animateParticles);
+
+      // Render click sparks
+      for (let i = clickSparks.length - 1; i >= 0; i--) {
+        const s = clickSparks[i];
+        s.x += s.vx;
+        s.y += s.vy;
+        s.life -= 0.035;
+
+        if (s.life <= 0) {
+          clickSparks.splice(i, 1);
+        } else {
+          ctx.fillStyle = `rgba(${s.color}, ${s.life})`;
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.size * s.life, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      requestAnimationFrame(animateCanvas);
     }
-    animateParticles();
+    animateCanvas();
 
     // -------------------------------------------------------------
-    // B. 3D CARD TILT ON MOUSEMOVE
+    // C. 3D CARD TILT ON MOUSEMOVE
     // -------------------------------------------------------------
     const tiltCards = document.querySelectorAll('.tilt-card');
     tiltCards.forEach(card => {
@@ -1475,8 +1674,8 @@
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left - rect.width / 2;
         const y = e.clientY - rect.top - rect.height / 2;
-        const rotateX = -(y / rect.height) * 10;
-        const rotateY = (x / rect.width) * 10;
+        const rotateX = -(y / rect.height) * 9;
+        const rotateY = (x / rect.width) * 9;
         card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
       });
       card.addEventListener('mouseleave', () => {
@@ -1485,9 +1684,10 @@
     });
 
     // -------------------------------------------------------------
-    // C. TOOL TABS SWITCHER
+    // D. TOOL TABS SWITCHER
     // -------------------------------------------------------------
     function switchToolTab(tabId) {
+      sound.playWarp();
       const panels = document.querySelectorAll('.tool-panel');
       panels.forEach(p => p.classList.add('hidden'));
 
@@ -1498,19 +1698,19 @@
 
       const buttons = document.querySelectorAll('#toolTabs button');
       buttons.forEach(b => {
-        b.className = 'px-4 py-2.5 rounded-2xl bg-space-850 hover:bg-space-800 text-slate-300 text-xs font-bold transition flex items-center gap-2 border border-space-700 btn-magnetic';
+        b.className = 'px-5 py-2.5 rounded-2xl bg-royal-850 hover:bg-royal-800 text-amber-200 text-xs font-bold transition flex items-center gap-2 border border-amber-500/30 btn-gold-spring';
       });
 
       const activeBtn = document.getElementById(`btn-${tabId}`);
       if (activeBtn) {
-        activeBtn.className = 'px-4 py-2.5 rounded-2xl bg-gradient-to-r from-cyanGlow-500 to-blue-600 text-space-950 font-extrabold text-xs transition flex items-center gap-2 shadow-lg shadow-cyanGlow-500/20 btn-magnetic';
+        activeBtn.className = 'px-5 py-2.5 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 text-royal-950 font-black text-xs transition flex items-center gap-2 shadow-lg shadow-amber-500/30 btn-gold-spring';
       }
 
       lucide.createIcons();
     }
 
     // -------------------------------------------------------------
-    // D. TIMING BELT CALCULATOR LOGIC
+    // E. TIMING BELT CALCULATOR LOGIC
     // -------------------------------------------------------------
     function calculateBelt() {
       const pitch = parseFloat(document.getElementById('calcPitch').value) || 8;
@@ -1559,7 +1759,7 @@ _Please share availability and wholesale quote._`;
     }
 
     // -------------------------------------------------------------
-    // E. BEARING SPEC LOOKUP ENGINE
+    // F. BEARING SPEC LOOKUP ENGINE
     // -------------------------------------------------------------
     const bearingDB = {
       '6000': { name: '6000-2RS Deep Groove', bore: 10, outer: 26, width: 8, load: 4.6, stock: '500+ Pcs' },
@@ -1611,7 +1811,7 @@ _Please share wholesale carton prices & availability._`;
     }
 
     // -------------------------------------------------------------
-    // F. B2B WHOLESALE CART & PURCHASE ORDER ENGINE
+    // G. B2B WHOLESALE CART & PURCHASE ORDER ENGINE
     // -------------------------------------------------------------
     let cartItems = [
       { name: 'Deep Groove Ball Bearing 6205-2RS', price: 180, qty: 50 },
@@ -1632,11 +1832,11 @@ _Please share wholesale carton prices & availability._`;
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td class="p-2 font-bold text-white">${item.name}</td>
-          <td class="p-2 text-center font-mono text-slate-300">${item.qty}</td>
-          <td class="p-2 text-right font-mono text-slate-300">₹${item.price}</td>
-          <td class="p-2 text-right font-mono font-bold text-amberGlow-400">₹${itemTotal.toLocaleString('en-IN')}</td>
+          <td class="p-2 text-center font-mono text-amber-200">${item.qty}</td>
+          <td class="p-2 text-right font-mono text-amber-200">₹${item.price}</td>
+          <td class="p-2 text-right font-mono font-bold text-amber-300">₹${itemTotal.toLocaleString('en-IN')}</td>
           <td class="p-2 text-center">
-            <button onclick="removeCartItem(${index})" class="text-red-400 hover:text-red-300 font-bold px-1">&times;</button>
+            <button onclick="removeCartItem(${index}); sound.playClick();" class="text-red-400 hover:text-red-300 font-bold px-1">&times;</button>
           </td>
         `;
         tbody.appendChild(tr);
@@ -1708,7 +1908,7 @@ _Please confirm formal proforma invoice & today's dispatch slot._`;
     }
 
     // -------------------------------------------------------------
-    // G. FREIGHT & TRANSIT LOOKUP
+    // H. FREIGHT & TRANSIT LOOKUP
     // -------------------------------------------------------------
     const freightDB = {
       'pune': { title: 'Maharashtra Industrial Cluster (Pune, Nashik, Aurangabad)', eta: 'Next-Day (12 - 24 Hours)', cutoff: 'Daily 6:30 PM (Masjid Bunder Hub)', partners: 'V-Trans, Patel Roadways, Ghatge Patil' },
@@ -1731,19 +1931,19 @@ _Please confirm formal proforma invoice & today's dispatch slot._`;
     lookupFreight();
 
     // -------------------------------------------------------------
-    // H. CATEGORY FILTER
+    // I. CATEGORY FILTER
     // -------------------------------------------------------------
     function filterGroup(group) {
       const cards = document.querySelectorAll('.item-card');
       const tabs = document.querySelectorAll('.filter-tab');
 
       tabs.forEach(tab => {
-        tab.className = 'filter-tab px-3.5 py-2 rounded-xl bg-transparent text-slate-300 hover:text-white hover:bg-space-800 transition font-mono';
+        tab.className = 'filter-tab px-3.5 py-2 rounded-xl bg-transparent text-amber-200/80 hover:text-white hover:bg-royal-800 transition font-mono';
       });
 
       const activeTab = document.getElementById(`tab-${group}`);
       if (activeTab) {
-        activeTab.className = 'filter-tab px-3.5 py-2 rounded-xl bg-gradient-to-r from-cyanGlow-500 to-blue-600 text-space-950 transition font-extrabold shadow-md font-mono';
+        activeTab.className = 'filter-tab px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-royal-950 transition font-black shadow-md font-mono';
       }
 
       cards.forEach(card => {
