@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>M/s Belubeari Exim Pro B2B Suite | Interactive Industrial Engineering Tools & Calculations</title>
+  <meta name="description" content="Industrial Timing Belt Calculator, Bearing Clearance Finder, Bulk B2B Quotation Generator & Pan-India Dispatch Hub - M/s Belubeari Exim Mumbai." />
+
+  <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              700: '#1e40af',
+              800: '#1e3a8a',
+              900: '#0f2942',
+              950: '#0a1726',
+            },
+            amber: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            emerald: {
+              500: '#10b981',
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      max-width: 100%;
+      overflow-x: clip;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    .font-heading { font-family: 'Outfit', sans-serif; }
+    
+    .app-container {
+      width: 100%;
+      max-width: min(100%, 1280px);
+      margin-inline: auto;
+      padding-inline: clamp(0.75rem, 3vw, 1.75rem);
+    }
+
+    .tool-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 30px -5px rgba(37, 99, 235, 0.07), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+      border-radius: 1.25rem;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .tool-card:hover {
+      border-color: #3b82f6;
+      box-shadow: 0 16px 36px -6px rgba(37, 99, 235, 0.12);
+    }
+
+    .btn-spring {
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .btn-spring:active {
+      transform: scale(0.96);
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+
+<body class="pb-24 md:pb-8">
+
+  <!-- ============================================================
+       TOP ANNOUNCEMENT BAR
+  ============================================================ -->
+  <div class="bg-gradient-to-r from-amber-500 via-brand-600 to-amber-500 text-white text-[11px] sm:text-xs font-semibold py-2 px-3 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 overflow-hidden whitespace-nowrap">
+        <span class="px-2 py-0.5 rounded bg-black/25 text-amber-200 font-extrabold uppercase text-[10px] tracking-wider animate-pulse">
+          ⚡ PRO ENGINEERING SUITE
+        </span>
+        <span class="truncate">M/s Belubeari Exim — Timing Belt & Bearing Calculation Tools + Instant WhatsApp PO</span>
+      </div>
+      <a href="tel:+919967384878" class="flex items-center gap-1.5 text-[11px] font-bold bg-black/20 hover:bg-black/30 px-3 py-0.5 rounded-full transition">
+        <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400"></i>
+        <span>Helpline: +91 99673 84878</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER NAVIGATION
+  ============================================================ -->
+  <header class="sticky top-[35px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-amber-500 p-0.5 shadow-md">
+          <div class="w-full h-full bg-brand-900 rounded-[10px] flex items-center justify-center text-amber-400 font-black text-lg font-heading">
+            BE
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-heading font-black text-lg sm:text-xl text-slate-900 tracking-tight leading-none">
+              BELUBEARI <span class="text-brand-600">PRO TOOLS</span>
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-brand-50 text-brand-700 border border-brand-200">Suite v2.0</span>
+          </div>
+          <p class="text-[10px] text-slate-500 font-medium">Masjid Bunder, Mumbai • +91 99673 84878</p>
+        </div>
+      </a>
+
+      <!-- Quick Tab Anchors -->
+      <nav class="hidden md:flex items-center gap-5 text-xs font-bold text-slate-600">
+        <a href="#belt-calculator" class="hover:text-brand-600 transition flex items-center gap-1"><i data-lucide="calculator" class="w-3.5 h-3.5"></i> Belt Pitch Calc</a>
+        <a href="#bearing-finder" class="hover:text-brand-600 transition flex items-center gap-1"><i data-lucide="circle-dot" class="w-3.5 h-3.5"></i> Bearing Spec Finder</a>
+        <a href="#po-builder" class="hover:text-amber-600 transition flex items-center gap-1"><i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i> B2B Cart & PO</a>
+        <a href="#freight-tracker" class="hover:text-brand-600 transition flex items-center gap-1"><i data-lucide="truck" class="w-3.5 h-3.5"></i> Freight ETA</a>
+      </nav>
+
+      <!-- Action -->
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold border border-slate-200 transition">
+          &larr; Catalog View
+        </a>
+        <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20I%20need%20technical%20assistance%20for%20industrial%20bearings/belts." target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1.5 shadow-sm btn-spring">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> <span>WhatsApp Desk</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO BANNER
+  ============================================================ -->
+  <section class="pt-8 pb-10 bg-gradient-to-b from-white via-brand-50/50 to-slate-100/60 border-b border-slate-200">
+    <div class="app-container text-center max-w-3xl mx-auto space-y-3">
+      <span class="text-xs uppercase tracking-widest text-brand-700 font-extrabold bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
+        Industrial Mechanical Engineering Suite
+      </span>
+      <h1 class="font-heading font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
+        Precision Calculation & Instant <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-amber-600">B2B Procurement</span> Tools
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+        Calculate exact timing belt pitch lengths, bearing load ratings, wholesale bulk order savings, and pan-India transport dispatch timelines in seconds.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TOOL 1: INDUSTRIAL TIMING BELT PITCH & LENGTH CALCULATOR
+  ============================================================ -->
+  <section id="belt-calculator" class="py-10 bg-white border-b border-slate-200">
+    <div class="app-container">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center font-bold">
+          <i data-lucide="disc" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="font-heading font-extrabold text-lg sm:text-2xl text-slate-900">
+            01. Industrial Timing Belt Length & Center Distance Calculator
+          </h2>
+          <p class="text-xs text-slate-500">Calculate exact Pitch Length ($L_p$), Teeth Count ($Z$), and Mitsuboshi/Conti part code.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Input Form -->
+        <div class="lg:col-span-6 tool-card p-5 sm:p-6 space-y-4">
+          <h3 class="font-heading font-bold text-sm text-slate-900 uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="sliders" class="w-4 h-4 text-brand-600"></i> Drive Input Parameters
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Belt Pitch Profile *</label>
+              <select id="calcPitch" onchange="calculateBelt()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none">
+                <option value="8" selected>8M HTD / STD (8.0 mm Pitch)</option>
+                <option value="14">14M HTD / MegaTorque (14.0 mm Pitch)</option>
+                <option value="5">5M HTD (5.0 mm Pitch)</option>
+                <option value="3">3M HTD (3.0 mm Pitch)</option>
+                <option value="9.525">L Imperial (9.525 mm Pitch)</option>
+                <option value="12.7">H Imperial (12.7 mm Pitch)</option>
+                <option value="22.225">XH Heavy (22.225 mm Pitch)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Center Distance $C$ (mm) *</label>
+              <input type="number" id="calcCenter" value="350" min="20" max="5000" oninput="calculateBelt()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Driver Pulley Teeth ($z_1$) *</label>
+              <input type="number" id="calcTeeth1" value="28" min="10" max="300" oninput="calculateBelt()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Driven Pulley Teeth ($z_2$) *</label>
+              <input type="number" id="calcTeeth2" value="48" min="10" max="300" oninput="calculateBelt()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Standard Desired Belt Width (mm)</label>
+            <select id="calcWidth" onchange="calculateBelt()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none">
+              <option value="20" selected>20 mm (Standard Light-Medium)</option>
+              <option value="30">30 mm (Industrial Standard)</option>
+              <option value="50">50 mm (Heavy Torque)</option>
+              <option value="85">85 mm (High Tensile Heavy Duty)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Real-time Output & Mitsuboshi/Conti Match -->
+        <div class="lg:col-span-6 tool-card p-5 sm:p-6 bg-gradient-to-br from-slate-900 via-brand-950 to-brand-900 text-white flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-white/10">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i> Calculated Drive Output
+              </span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">In Stock Ready</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center">
+                <p class="text-[10px] uppercase text-slate-400 font-bold">Exact Belt Pitch Length</p>
+                <p id="resLength" class="font-heading font-black text-xl sm:text-2xl text-cyan-300 mt-0.5">1004 mm</p>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-center">
+                <p class="text-[10px] uppercase text-slate-400 font-bold">Recommended Teeth Count</p>
+                <p id="resTeeth" class="font-heading font-black text-xl sm:text-2xl text-amber-300 mt-0.5">126 Teeth</p>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-white/10 border border-white/15">
+              <p class="text-[10px] uppercase text-slate-400 font-bold">Recommended Part Code (Mitsuboshi / Conti Equivalent):</p>
+              <p id="resPartCode" class="font-mono font-bold text-base text-white mt-1">1008-8M-20 (HTD Profile)</p>
+              <p class="text-[11px] text-slate-300 mt-1">Speed Ratio: <span id="resRatio" class="font-bold text-white">1 : 1.71</span> | Pitch Diameters: <span id="resPD" class="font-bold text-white">71.3mm / 122.2mm</span></p>
+            </div>
+          </div>
+
+          <button onclick="orderBeltCalcWhatsApp()" class="mt-4 w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg btn-spring">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Send Calculated Specs on WhatsApp & Get Rates</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TOOL 2: BEARING CLEARANCE, RPM & LOAD SPECIFICATION FINDER
+  ============================================================ -->
+  <section id="bearing-finder" class="py-10 bg-slate-50 border-b border-slate-200">
+    <div class="app-container">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold">
+          <i data-lucide="circle-dot" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="font-heading font-extrabold text-lg sm:text-2xl text-slate-900">
+            02. Precision Bearing Dimensions & Load Specification Finder
+          </h2>
+          <p class="text-xs text-slate-500">Lookup Inner Bore ($d$), Outer Dia ($D$), Width ($B$), Dynamic Load ($C_r$), and Max RPM.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Selection -->
+        <div class="lg:col-span-5 tool-card p-5 sm:p-6 space-y-4">
+          <h3 class="font-heading font-bold text-sm text-slate-900 uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="search" class="w-4 h-4 text-amber-600"></i> Select Bearing Code
+          </h3>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Standard Bearing Number *</label>
+            <select id="bearingSelect" onchange="lookupBearing()" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs sm:text-sm font-bold focus:border-brand-500 focus:outline-none">
+              <optgroup label="Deep Groove Ball Bearings (6000 Series)">
+                <option value="6000" selected>6000-2RS / 2Z (10x26x8 mm)</option>
+                <option value="6004">6004-2RS / 2Z (20x42x12 mm)</option>
+                <option value="6008">6008-2RS / 2Z (40x68x15 mm)</option>
+              </optgroup>
+              <optgroup label="Deep Groove Ball Bearings (6200 Series - Most Popular)">
+                <option value="6202">6202-2RS / 2Z (15x35x11 mm)</option>
+                <option value="6204">6204-2RS / 2Z (20x47x14 mm)</option>
+                <option value="6205">6205-2RS / 2Z (25x52x15 mm)</option>
+                <option value="6208">6208-2RS / 2Z (40x80x18 mm)</option>
+              </optgroup>
+              <optgroup label="Heavy-Duty Deep Groove (6300 Series)">
+                <option value="6305">6305-2RS / 2Z (25x62x17 mm)</option>
+                <option value="6308">6308-2RS / 2Z (40x90x23 mm)</option>
+                <option value="6310">6310-2RS / 2Z (50x110x27 mm)</option>
+              </optgroup>
+              <optgroup label="Tapered Roller Bearings (30200 / 32200 Series)">
+                <option value="30205">30205 Tapered Roller (25x52x16.25 mm)</option>
+                <option value="32208">32208 Tapered Roller (40x80x24.75 mm)</option>
+              </optgroup>
+              <optgroup label="Pillow Block Mounted Units (UCP Series)">
+                <option value="UCP205">UCP 205 Pillow Block (25 mm Shaft)</option>
+                <option value="UCP208">UCP 208 Pillow Block (40 mm Shaft)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Internal Radial Clearance</label>
+            <select id="bearingClearance" onchange="lookupBearing()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none">
+              <option value="CN" selected>Normal Clearance (CN - Standard Machines)</option>
+              <option value="C3">C3 Clearance (High Temp / High Vibration Motors)</option>
+              <option value="C4">C4 Clearance (Extreme Mining / Heavy Crushers)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Sealing / Shielding Option</label>
+            <select id="bearingShield" onchange="lookupBearing()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:border-brand-500 focus:outline-none">
+              <option value="2RS" selected>2RS — Dual Rubber Sealed (Dust & Water Proof)</option>
+              <option value="2Z">2Z / ZZ — Dual Metal Shielded (High Temp)</option>
+              <option value="OPEN">OPEN — Factory Pre-Greased / Oil Bath</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Result Card -->
+        <div class="lg:col-span-7 tool-card p-5 sm:p-6 bg-white space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+            <div>
+              <span class="text-[10px] font-bold uppercase text-brand-600 bg-brand-50 px-2 py-0.5 rounded border border-brand-200">ISO 9001 Certified Specs</span>
+              <h4 id="bName" class="font-heading font-black text-xl text-slate-900 mt-1">6205-2RS Deep Groove Ball Bearing</h4>
+            </div>
+            <span id="bStockStatus" class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">Ready Stock: 500+ Pcs</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-center">
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+              <p class="text-[10px] text-slate-500 font-bold uppercase">Bore ($d$)</p>
+              <p id="bBore" class="font-heading font-extrabold text-base text-slate-900">25 mm</p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+              <p class="text-[10px] text-slate-500 font-bold uppercase">Outer ($D$)</p>
+              <p id="bOuter" class="font-heading font-extrabold text-base text-slate-900">52 mm</p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+              <p class="text-[10px] text-slate-500 font-bold uppercase">Width ($B$)</p>
+              <p id="bWidth" class="font-heading font-extrabold text-base text-slate-900">15 mm</p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
+              <p class="text-[10px] text-slate-500 font-bold uppercase">Dynamic Load</p>
+              <p id="bLoad" class="font-heading font-extrabold text-base text-brand-600">14.8 kN</p>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between text-xs">
+            <div>
+              <p class="font-bold text-amber-900">Recommended Masjid Bunder Wholesale Rate:</p>
+              <p class="text-slate-600">Tier Slabs from <strong class="text-slate-900">₹140 - ₹190/pc*</strong> based on box quantity.</p>
+            </div>
+            <button onclick="orderBearingWhatsApp()" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs btn-spring shrink-0 shadow-sm">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5 inline"></i> WhatsApp Price
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TOOL 3: INTERACTIVE B2B WHOLESALE CART & PO BUILDER
+  ============================================================ -->
+  <section id="po-builder" class="py-10 bg-white border-b border-slate-200">
+    <div class="app-container">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="font-heading font-extrabold text-lg sm:text-2xl text-slate-900">
+            03. B2B Wholesale Bulk Slab & Purchase Order Builder
+          </h2>
+          <p class="text-xs text-slate-500">Build your custom order list, calculate bulk volume discount slabs, and generate a 1-click WhatsApp Purchase Order.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Add Items -->
+        <div class="lg:col-span-7 tool-card p-5 sm:p-6 space-y-4">
+          <h3 class="font-heading font-bold text-sm text-slate-900 uppercase tracking-wider flex items-center justify-between">
+            <span>Add Products to Cart</span>
+            <span class="text-xs font-normal text-slate-500">Auto Volume Slab Discount</span>
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+            <div class="sm:col-span-6">
+              <label class="block text-[11px] font-bold text-slate-700 mb-1">Item Description</label>
+              <select id="cartProduct" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none">
+                <option value="Mitsuboshi Timing Belts (8M-1200)" data-price="550">Mitsuboshi Timing Belts 8M (₹550/pc)</option>
+                <option value="Continental Conti-V Timing Belts" data-price="680">Conti Synchrobelt (₹680/pc)</option>
+                <option value="Deep Groove Ball Bearing 6205-2RS" data-price="180" selected>Deep Groove Bearing 6205-2RS (₹180/pc)</option>
+                <option value="Deep Groove Ball Bearing 6308-2RS" data-price="420">Deep Groove Bearing 6308-2RS (₹420/pc)</option>
+                <option value="Tapered Roller Bearing 30205" data-price="480">Tapered Roller 30205 (₹480/pc)</option>
+                <option value="Pillow Block UCP 205 Housing" data-price="340">Pillow Block Bearing UCP 205 (₹340/pc)</option>
+                <option value="Linear Guide Rail HGH25 (1 Meter + 2 Blocks)" data-price="3200">Linear Guide Rail HGH25 (₹3,200/set)</option>
+                <option value="Automotive Grease AP3 (5 Kg Bucket)" data-price="1250">High Temp AP3 Grease 5Kg (₹1,250/bucket)</option>
+                <option value="Heavy Conveyor Belting (3-Ply 500mm / Mtr)" data-price="1150">Conveyor Belting 500mm (₹1,150/mtr)</option>
+              </select>
+            </div>
+
+            <div class="sm:col-span-3">
+              <label class="block text-[11px] font-bold text-slate-700 mb-1">Quantity</label>
+              <input type="number" id="cartQty" value="20" min="1" max="5000" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-xs font-semibold focus:outline-none" />
+            </div>
+
+            <div class="sm:col-span-3 flex items-end">
+              <button onclick="addToCart()" class="w-full py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold btn-spring shadow-sm">
+                + Add Item
+              </button>
+            </div>
+          </div>
+
+          <!-- Cart Table -->
+          <div class="overflow-x-auto rounded-xl border border-slate-200 mt-4">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-100 text-slate-700 font-bold uppercase text-[10px]">
+                <tr>
+                  <th class="p-2.5">Item</th>
+                  <th class="p-2.5 text-center">Qty</th>
+                  <th class="p-2.5 text-right">Unit Rate</th>
+                  <th class="p-2.5 text-right">Total</th>
+                  <th class="p-2.5 text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="cartTableBody" class="divide-y divide-slate-100 font-medium text-slate-800">
+                <!-- Injected via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Cart Summary & PO Generator -->
+        <div class="lg:col-span-5 tool-card p-5 sm:p-6 bg-slate-900 text-white flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="font-heading font-bold text-sm text-white uppercase tracking-wider flex items-center justify-between pb-2 border-b border-white/10">
+              <span>Wholesale Cost Summary</span>
+              <span class="text-xs text-amber-400 font-mono">B2B Slabs Applied</span>
+            </h3>
+
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Gross Order Value:</span>
+                <span id="sumGross" class="font-bold text-white">₹0</span>
+              </div>
+              <div class="flex justify-between text-emerald-400 font-bold">
+                <span id="discountLabel">Wholesale Volume Discount:</span>
+                <span id="sumDiscount">- ₹0</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Estimated GST (18% ITC Eligible):</span>
+                <span id="sumGst" class="font-bold text-white">₹0</span>
+              </div>
+              <div class="pt-2 border-t border-white/15 flex justify-between items-baseline">
+                <span class="font-bold text-sm text-white">Net Estimated Total:</span>
+                <span id="sumTotal" class="font-heading font-black text-xl text-amber-400">₹0</span>
+              </div>
+            </div>
+
+            <!-- Buyer Quick Details -->
+            <div class="space-y-2 pt-2">
+              <input type="text" id="poBuyerName" placeholder="Your Company / Factory Name" class="w-full px-3 py-2 rounded-xl bg-white/10 border border-white/15 text-white text-xs placeholder-slate-400 focus:outline-none focus:border-cyan-400" />
+              <input type="text" id="poDestination" placeholder="Delivery Destination (e.g. Pune / Vapi / Delhi)" class="w-full px-3 py-2 rounded-xl bg-white/10 border border-white/15 text-white text-xs placeholder-slate-400 focus:outline-none focus:border-cyan-400" />
+            </div>
+          </div>
+
+          <button onclick="sendCartWhatsApp()" class="mt-4 w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg btn-spring">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Send Purchase Order on WhatsApp Desk</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TOOL 4: PAN-INDIA TRANSPORT & FREIGHT TRANSIT ESTIMATOR
+  ============================================================ -->
+  <section id="freight-tracker" class="py-10 bg-slate-50 border-b border-slate-200">
+    <div class="app-container">
+      
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold">
+          <i data-lucide="truck" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="font-heading font-extrabold text-lg sm:text-2xl text-slate-900">
+            04. Pan-India Transport & Dispatch ETA Calculator
+          </h2>
+          <p class="text-xs text-slate-500">Calculate transit timeline from Masjid Bunder Hub to your industrial cluster.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <div class="tool-card p-4 sm:p-5">
+          <div class="flex items-center gap-2 text-brand-600 font-bold text-xs uppercase mb-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> Maharashtra & Gujarat
+          </div>
+          <p class="font-heading font-extrabold text-base text-slate-900">Next-Day (12 - 24 Hours)</p>
+          <p class="text-xs text-slate-500 mt-1">Pune, Vapi, Surat, Ahmedabad, Nashik, Aurangabad, Kolhapur.</p>
+          <div class="mt-3 text-[11px] text-emerald-700 font-bold bg-emerald-50 p-2 rounded-lg border border-emerald-200">
+            ✓ Daily V-Trans & Patel Roadways Evening Loading
+          </div>
+        </div>
+
+        <div class="tool-card p-4 sm:p-5">
+          <div class="flex items-center gap-2 text-amber-600 font-bold text-xs uppercase mb-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> North & Central India
+          </div>
+          <p class="font-heading font-extrabold text-base text-slate-900">24 - 48 Hours</p>
+          <p class="text-xs text-slate-500 mt-1">Delhi NCR, Indore, Bhopal, Jaipur, Kanpur, Ludhiana, Chandigarh.</p>
+          <div class="mt-3 text-[11px] text-amber-800 font-bold bg-amber-50 p-2 rounded-lg border border-amber-200">
+            ✓ TCI Freight, ARC & Express Surface Transport
+          </div>
+        </div>
+
+        <div class="tool-card p-4 sm:p-5">
+          <div class="flex items-center gap-2 text-purple-600 font-bold text-xs uppercase mb-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> South & East India
+          </div>
+          <p class="font-heading font-extrabold text-base text-slate-900">48 - 72 Hours</p>
+          <p class="text-xs text-slate-500 mt-1">Bengaluru, Chennai, Hyderabad, Coimbatore, Kolkata, Bhubaneswar.</p>
+          <div class="mt-3 text-[11px] text-purple-800 font-bold bg-purple-50 p-2 rounded-lg border border-purple-200">
+            ✓ Direct Southern & Eastern Hub Containers
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="app-container flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+      <div>
+        <p class="text-white font-bold text-xs sm:text-sm">M/s Belubeari Exim • Pro B2B Engineering Suite</p>
+        <p class="text-[11px] text-slate-400 mt-0.5">Office No. 8, 2nd Floor, 261/263, Yusuf Meherali Road, Masjid Bunder, Mumbai – 400003 • Call: +91 99673 84878</p>
+      </div>
+      <p class="text-[11px] text-slate-500">
+        &copy; 2026 M/s Belubeari Exim. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       STICKY MOBILE DOCK
+  ============================================================ -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-t border-slate-200 p-2 sm:hidden shadow-lg">
+    <div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-bold">
+      <a href="index.html" class="py-1.5 rounded-xl bg-slate-100 text-slate-800 border border-slate-200 btn-spring">
+        <i data-lucide="grid" class="w-4 h-4 mx-auto text-brand-600 mb-0.5"></i>
+        <span>Catalog</span>
+      </a>
+      <a href="#belt-calculator" class="py-1.5 rounded-xl bg-slate-100 text-slate-800 border border-slate-200 btn-spring">
+        <i data-lucide="calculator" class="w-4 h-4 mx-auto text-brand-600 mb-0.5"></i>
+        <span>Belt Calc</span>
+      </a>
+      <a href="tel:+919967384878" class="py-1.5 rounded-xl bg-slate-100 text-slate-800 border border-slate-200 btn-spring">
+        <i data-lucide="phone-call" class="w-4 h-4 mx-auto text-emerald-600 mb-0.5"></i>
+        <span>Call</span>
+      </a>
+      <a href="https://wa.me/919967384878?text=Hello%20M/s%20Belubeari%20Exim,%20I%20am%20using%20the%20Pro%20B2B%20Suite." target="_blank" rel="noopener noreferrer" class="py-1.5 rounded-xl bg-emerald-600 text-white btn-spring shadow-sm">
+        <i data-lucide="message-circle" class="w-4 h-4 mx-auto text-white mb-0.5"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       INTERACTIVE JAVASCRIPT CALCULATION ENGINES
+  ============================================================ -->
+  <script>
+    lucide.createIcons();
+
+    // 1. TIMING BELT LENGTH CALCULATION ENGINE
+    function calculateBelt() {
+      const pitch = parseFloat(document.getElementById('calcPitch').value) || 8;
+      const C = parseFloat(document.getElementById('calcCenter').value) || 350;
+      const z1 = parseInt(document.getElementById('calcTeeth1').value) || 28;
+      const z2 = parseInt(document.getElementById('calcTeeth2').value) || 48;
+      const width = document.getElementById('calcWidth').value || '20';
+
+      // Pitch Diameters
+      const pd1 = (z1 * pitch) / Math.PI;
+      const pd2 = (z2 * pitch) / Math.PI;
+
+      // Exact Pitch Length formula:
+      // L = 2*C + (pi/2)*(D1 + D2) + ((D2 - D1)^2) / (4*C)
+      const term1 = 2 * C;
+      const term2 = (Math.PI / 2) * (pd1 + pd2);
+      const term3 = Math.pow(pd2 - pd1, 2) / (4 * C);
+      const exactL = term1 + term2 + term3;
+
+      // Exact Teeth Count
+      const teethCount = Math.round(exactL / pitch);
+      const standardLength = teethCount * pitch;
+
+      document.getElementById('resLength').textContent = `${Math.round(standardLength)} mm`;
+      document.getElementById('resTeeth').textContent = `${teethCount} Teeth`;
+      document.getElementById('resRatio').textContent = `1 : ${(z2 / z1).toFixed(2)}`;
+      document.getElementById('resPD').textContent = `${pd1.toFixed(1)}mm / ${pd2.toFixed(1)}mm`;
+
+      const partCode = `${Math.round(standardLength)}-${pitch === 8 ? '8M' : pitch === 14 ? '14M' : pitch + 'M'}-${width}`;
+      document.getElementById('resPartCode').textContent = `${partCode} (Mitsuboshi/Conti Equivalent)`;
+    }
+    calculateBelt();
+
+    function orderBeltCalcWhatsApp() {
+      const length = document.getElementById('resLength').textContent;
+      const teeth = document.getElementById('resTeeth').textContent;
+      const partCode = document.getElementById('resPartCode').textContent;
+      const pitch = document.getElementById('calcPitch').options[document.getElementById('calcPitch').selectedIndex].text;
+      const center = document.getElementById('calcCenter').value;
+
+      const msg = `*⚙️ TIMING BELT CALCULATION RFQ - BELUBEARI EXIM*
+---------------------------------------
+📏 *Calculated Belt:* ${partCode}
+🔢 *Pitch Length:* ${length} (${teeth})
+📐 *Drive Pitch:* ${pitch}
+🏢 *Center Distance:* ${center} mm
+---------------------------------------
+_Please share availability and wholesale quote._`;
+
+      window.open(`https://wa.me/919967384878?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // 2. BEARING LOOKUP DATABASE & ENGINE
+    const bearingDB = {
+      '6000': { name: '6000-2RS Deep Groove', bore: 10, outer: 26, width: 8, load: 4.6, stock: '500+ Pcs' },
+      '6004': { name: '6004-2RS Deep Groove', bore: 20, outer: 42, width: 12, load: 9.4, stock: '400+ Pcs' },
+      '6008': { name: '6008-2RS Deep Groove', bore: 40, outer: 68, width: 15, load: 16.8, stock: '250+ Pcs' },
+      '6202': { name: '6202-2RS Deep Groove', bore: 15, outer: 35, width: 11, load: 7.7, stock: '600+ Pcs' },
+      '6204': { name: '6204-2RS Deep Groove', bore: 20, outer: 47, width: 14, load: 12.8, stock: '800+ Pcs' },
+      '6205': { name: '6205-2RS Deep Groove', bore: 25, outer: 52, width: 15, load: 14.8, stock: '1,000+ Pcs' },
+      '6208': { name: '6208-2RS Deep Groove', bore: 40, outer: 80, width: 18, load: 29.6, stock: '350+ Pcs' },
+      '6305': { name: '6305-2RS Heavy Duty', bore: 25, outer: 62, width: 17, load: 22.4, stock: '450+ Pcs' },
+      '6308': { name: '6308-2RS Heavy Duty', bore: 40, outer: 90, width: 23, load: 40.5, stock: '300+ Pcs' },
+      '6310': { name: '6310-2RS Heavy Duty', bore: 50, outer: 110, width: 27, load: 61.8, stock: '200+ Pcs' },
+      '30205': { name: '30205 Tapered Roller', bore: 25, outer: 52, width: 16.25, load: 31.5, stock: '250+ Pcs' },
+      '32208': { name: '32208 Tapered Roller', bore: 40, outer: 80, width: 24.75, load: 76.5, stock: '180+ Pcs' },
+      'UCP205': { name: 'UCP 205 Pillow Block Unit', bore: 25, outer: 140, width: 38, load: 14.0, stock: '300+ Sets' },
+      'UCP208': { name: 'UCP 208 Pillow Block Unit', bore: 40, outer: 184, width: 49.2, load: 29.6, stock: '150+ Sets' },
+    };
+
+    function lookupBearing() {
+      const code = document.getElementById('bearingSelect').value;
+      const clearance = document.getElementById('bearingClearance').value;
+      const shield = document.getElementById('bearingShield').value;
+      const data = bearingDB[code] || bearingDB['6205'];
+
+      document.getElementById('bName').textContent = `${code}-${shield} (${clearance}) ${data.name}`;
+      document.getElementById('bBore').textContent = `${data.bore} mm`;
+      document.getElementById('bOuter').textContent = `${data.outer} mm`;
+      document.getElementById('bWidth').textContent = `${data.width} mm`;
+      document.getElementById('bLoad').textContent = `${data.load} kN`;
+      document.getElementById('bStockStatus').textContent = `Ready Stock: ${data.stock}`;
+    }
+    lookupBearing();
+
+    function orderBearingWhatsApp() {
+      const name = document.getElementById('bName').textContent;
+      const bore = document.getElementById('bBore').textContent;
+      const outer = document.getElementById('bOuter').textContent;
+      const width = document.getElementById('bWidth').textContent;
+
+      const msg = `*🔩 BEARING INQUIRY - BELUBEARI EXIM*
+---------------------------------------
+📦 *Bearing:* ${name}
+📏 *Dimensions:* ${bore} x ${outer} x ${width}
+🏢 *Hub:* Masjid Bunder, Mumbai
+---------------------------------------
+_Please share wholesale carton prices & availability._`;
+
+      window.open(`https://wa.me/919967384878?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // 3. B2B WHOLESALE CART & PURCHASE ORDER ENGINE
+    let cartItems = [
+      { name: 'Deep Groove Ball Bearing 6205-2RS', price: 180, qty: 50 },
+      { name: 'Mitsuboshi Timing Belts (8M-1200)', price: 550, qty: 10 }
+    ];
+
+    function renderCart() {
+      const tbody = document.getElementById('cartTableBody');
+      tbody.innerHTML = '';
+      let gross = 0;
+      let totalQty = 0;
+
+      cartItems.forEach((item, index) => {
+        const itemTotal = item.price * item.qty;
+        gross += itemTotal;
+        totalQty += item.qty;
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="p-2.5 font-bold text-slate-900">${item.name}</td>
+          <td class="p-2.5 text-center font-mono">${item.qty}</td>
+          <td class="p-2.5 text-right font-mono">₹${item.price}</td>
+          <td class="p-2.5 text-right font-mono font-bold text-brand-700">₹${itemTotal.toLocaleString('en-IN')}</td>
+          <td class="p-2.5 text-center">
+            <button onclick="removeCartItem(${index})" class="text-red-500 hover:text-red-700 font-bold px-1.5 py-0.5 rounded">&times;</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Volume Slab Discount Logic:
+      // > 100 total items: 15% discount
+      // > 50 total items: 10% discount
+      // > 20 total items: 5% discount
+      let discountRate = 0;
+      if (totalQty >= 100) discountRate = 0.15;
+      else if (totalQty >= 50) discountRate = 0.10;
+      else if (totalQty >= 20) discountRate = 0.05;
+
+      const discountAmt = gross * discountRate;
+      const taxable = gross - discountAmt;
+      const gst = taxable * 0.18;
+      const netTotal = taxable + gst;
+
+      document.getElementById('sumGross').textContent = `₹${gross.toLocaleString('en-IN')}`;
+      document.getElementById('discountLabel').textContent = `Wholesale Volume Discount (${(discountRate * 100)}%):`;
+      document.getElementById('sumDiscount').textContent = `- ₹${Math.round(discountAmt).toLocaleString('en-IN')}`;
+      document.getElementById('sumGst').textContent = `₹${Math.round(gst).toLocaleString('en-IN')}`;
+      document.getElementById('sumTotal').textContent = `₹${Math.round(netTotal).toLocaleString('en-IN')}`;
+    }
+    renderCart();
+
+    function addToCart() {
+      const select = document.getElementById('cartProduct');
+      const name = select.value;
+      const price = parseFloat(select.options[select.selectedIndex].getAttribute('data-price')) || 200;
+      const qty = parseInt(document.getElementById('cartQty').value) || 10;
+
+      // check if exists
+      const existing = cartItems.find(i => i.name === name);
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        cartItems.push({ name, price, qty });
+      }
+      renderCart();
+    }
+
+    function removeCartItem(index) {
+      cartItems.splice(index, 1);
+      renderCart();
+    }
+
+    function sendCartWhatsApp() {
+      if (cartItems.length === 0) {
+        alert('Please add at least one item to the cart.');
+        return;
+      }
+
+      const buyer = document.getElementById('poBuyerName').value.trim() || 'Valued Industrial Client';
+      const destination = document.getElementById('poDestination').value.trim() || 'Immediate Dispatch Hub';
+      const total = document.getElementById('sumTotal').textContent;
+
+      let itemsList = cartItems.map((i, idx) => `${idx + 1}. *${i.name}* — ${i.qty} Pcs @ ₹${i.price}/pc`).join('\n');
+
+      const msg = `*🛒 OFFICIAL PURCHASE ORDER RFQ - BELUBEARI EXIM*
+---------------------------------------
+🏢 *Buyer / Company:* ${buyer}
+📍 *Destination:* ${destination}
+---------------------------------------
+*ORDER ITEMS LIST:*
+${itemsList}
+---------------------------------------
+💰 *Estimated Total (inc. Bulk Discount & GST):* ${total}
+---------------------------------------
+_Please confirm formal proforma invoice & today's dispatch slot._`;
+
+      window.open(`https://wa.me/919967384878?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
